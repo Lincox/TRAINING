@@ -1,0 +1,41 @@
+body, html{ 
+    margin:0;
+    padding:0;
+}
+
+.nav{
+    position: fixed;
+}
+.floatR {
+    float:right;
+}
+.floatL {
+    float: left;
+}
+
+.verticalM{
+    vertical-align: middle;
+    line-height: 50px;
+}
+div > a > img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.first{
+    position: relative;
+}
+
+.second{
+    position: absolute;
+    top:265.71px;
+    left:466.65px;
+    right:466.61px;
+}
+
+
+
