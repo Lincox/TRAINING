@@ -3,20 +3,103 @@ body, html{
     padding:0;
 }
 
-.nav{
-    position: fixed;
+ul {
+    list-style-type: none;
+} 
+
+ul > li {
+    display: inline-block;
 }
+
+div>a{
+    display: inline-block;
+}
+
+.widhun{
+    width:100%;
+}
+
+.fontSas{
+    font-family: 'Satisfy';
+}
+
+.fontSas-whatis{
+    font-family: 82px;
+}
+
+.fontRob{
+    font-family: 'Roboto Condensed';
+}
+
+.fontRob-karaberu{
+    font-size: 68px;
+}
+
+.fRMar{
+    margin-top:-10px;
+}
+
 .floatR {
     float:right;
+    font-size: 0;
 }
 .floatL {
     float: left;
 }
 
+.inlBlo{
+    display: inline-block;
+}
+
+.appearNav{
+    display: none;
+}
+
 .verticalM{
     vertical-align: middle;
-    line-height: 50px;
 }
+
+.navButton{
+    width: 178px;
+    height: 80px;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', bold;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    margin:0;
+}
+
+.navButton-black{
+    background-color: black;
+}
+
+.navButton-grey{
+    background-color: grey;
+}
+
+.navButton-black:hover{
+    border: 2px solid #000;
+    color: #000;
+    background: none;
+}
+
+.navButton-grey:hover{
+    border: 2px solid grey;
+    color: grey;
+    background: none;
+}
+
+.container{
+    max-width: 1100px;
+    padding:0 50px;
+    margin: 0 auto;
+}
+
+.nav{
+    position: fixed;
+}
+
 div > a > img{
     display: inline-block;
     vertical-align: middle;
@@ -30,11 +113,112 @@ div > a > img{
     position: relative;
 }
 
-.second{
+.first__1{
     position: absolute;
-    top:265.71px;
-    left:466.65px;
-    right:466.61px;
+    
+}
+
+.logoSec1{
+    top: calc(35% - 112px);
+    text-align: center;
+    width: 100%;
+}
+
+.whatis{
+    top:-200px;
+    font-size: 82px;
+}
+
+.colThi{
+    width: 41%;
+}
+
+.colSix{
+    width: 59%;
+}
+
+.title{
+    margin-top:100px;
+    font-size: 34px;
+}
+
+.content{
+    margin-top: 80px;
+    font-size: 14px;
+    padding-right: 88px;
+}
+
+.car{
+    top:115px;
+    left:300px;
+}
+
+.bicycle{
+    margin-left: -20px;
+}
+
+.aMar{
+    margin:0 45px 0  0;
+}
+
+.area{ height: auto; width: 35vw; background: rgba(255, 255, 255, 0); display:table-cell; }
+
+.blurSec{
+    background-image: url(../images/blur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto; 
+    height: auto 
+}
+
+.blurSec__area{
+    width: 1400px;
+    height: 420px;
+}
+@media(max-width:767px){
+    .hideNav{
+        display: none;
+    }
+    .appearNav{
+        display: inline-block;
+        padding: 18px 15px;
+    }
+
+    .appearNav>img{
+        max-width: 22px;
+        max-height: 13px;
+    }
+    .navButton{
+        width:90px;
+        height: 55px;
+        font-size: 11px;
+    }
+
+    .resizeLogoNav{
+        max-width: auto;
+        max-height: 37.8px;
+        padding: 8px 18px;
+    }
+
+    /* .resizeLogoMid{
+        max-width: 180px;
+        max-height: auto;
+    } */
+
+    .aMar{
+        margin: 0;
+    }
+
+    .whatis{
+        font-size: 55px;
+    }
+
+    /* .logoSec1{
+        top: calc(35% - 138px);
+        left: calc(50% - 90px);
+        max-width: 35px;
+        max-height:27px;
+    } */
 }
 
 
