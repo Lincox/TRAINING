@@ -3,12 +3,21 @@ body, html{
     padding:0;
 }
 
+a {
+    color: #000;
+    text-decoration: none; /* no underline */
+  }
+
 button{
     background: none;
     border: 0;
     border-radius: 0;
 }
 
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+    font-style: normal;
+}
 .center{
     text-align: center;
 }
@@ -30,6 +39,7 @@ div>a{
 
 .fontSas{
     font-family: 'Satisfy';
+    margin:0;
 }
 
 .fontSas-lineup{
@@ -43,12 +53,9 @@ div>a{
 
 .fontRob-karaberu{
     font-size: 68px;
+    margin-top:10px; 
 }
 
-
-.fRMar{
-    margin-top:50px;
-}
 
 .floatR {
     float:right;
@@ -64,6 +71,10 @@ div>a{
 
 .appearNav{
     display: none;
+}
+
+.left10{
+    padding-left:10px;
 }
 
 .verticalM{
@@ -86,7 +97,7 @@ div>a{
 }
 
 .navButton-grey{
-    background-color: grey;
+    background-color: #666;
 }
 
 .navButton-black:hover{
@@ -116,9 +127,9 @@ div > a > img{
     vertical-align: middle;
 }
 
-.clearfix {
+/* .clearfix {
     overflow: auto;
-}
+} */
 
 .clearfix::after {
     content: "";
@@ -126,11 +137,11 @@ div > a > img{
     display: table;
 }
 
-.first{
+.rel{
     position: relative;
 }
 
-.first__1{
+.abs{
     position: absolute;
     
 }
@@ -142,7 +153,8 @@ div > a > img{
 }
 
 .whatis{
-    margin-top:-150px;
+    position: absolute;
+    top:-200px;
     font-size: 82px;
 }
 
@@ -152,6 +164,10 @@ div > a > img{
 .colThi{
     width: 41%;
     float: left;
+}
+
+.colThiNoFlo{
+    width: 41%;
 }
 
 .colSix{
@@ -179,7 +195,8 @@ p span {
 }
 
 .bicycle{
-    margin: 80px 0 75px 45px ;
+    /* margin-left: -50px; */
+    margin: 10px 0 75px -50px ;
 }
 
 .aMar{
@@ -189,7 +206,7 @@ p span {
 .area{ height: auto; width: 35vw; background: rgba(255, 255, 255, 0); display:table-cell; }
 
 .blurSec{
-    background-image: url(../images/blur.png);
+    background-image: url("../images/blur.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto; 
@@ -227,7 +244,7 @@ p span {
     right: 0;
 }
 
-.foucoldes-blur:last-child::after{
+.foucoldes-blur:last-of-type::after{
     position: absolute;
     content: none;
 }
@@ -262,6 +279,11 @@ p span {
     background-color: #000;
 }
 
+.sec3Button-grey:after{
+    /* background-image: (url("../images/arrow.png"));  */
+    background-image: url("../images/demo.png");
+}
+
 .sec3Button-trans{
     background-color: none;
     border: 1px solid#fff;
@@ -280,9 +302,10 @@ p span {
     padding-bottom: 195px;
 }
 
-.sec4Text{
+.sec4Text, .sec7Text{
     font-size: 14px;
     margin-top:73px;
+    margin-bottom: 68px;
 }
 
 .sec4BigText{
@@ -299,7 +322,7 @@ p span {
     margin-bottom:0px;
 }
 
-.foucolsec4__imgMar:last-child{
+.foucolsec4__imgMar:last-of-type {
     margin-right: 0;
     margin-bottom:0
 }
@@ -308,13 +331,13 @@ p span {
     width:100%;
 }
 
-.first__1-lifestyle{
+.abs-lifestyle{
     text-align: center;
     width: 100%;
     top:-58px;
 }
 
-.hideImg{
+.hideImg, .hideImg2{
     width: 100%;
 }
 
@@ -330,36 +353,53 @@ p span {
 }
 
 .threecol{
-    width: 33.33333333%;
-    display: table-cell;
-    vertical-align: text-bottom;
-    
+    width: calc(33.33333333% - 16px);
+    float:left;
 }
+
+.threecol:last-of-type {
+    width: 33.3333333%;
+    background-color: #666;
+}
+/*Can't use last child?? Why?????*/
+
+.threecol-Mar{
+    margin-right: 16px;
+}
+
+
+.threecol-Mar:last-of-type {
+    margin-right: 10000px;
+}
+/*Can't use last child?? Why?????*/
+
 .housesMar{
     margin-right:80px;
 }
 
-.towcol{
+.twocol{
     width: 50%;
     float: left;
 }
 
-.towcol-1{
+.specbg{
     background-image: url("../images/sec6_1.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+    background-position: center;
+    background-size: 100% auto;
 }
 
-.towcol-2{
+.faqbg{
     background-image: url("../images/sec6_2.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
+
 
 .fontSas-sec6{
     font-size: 50px;
-    margin-top:50px;
-    margin-bottom:0; 
+    margin:0; 
     color: #fff;
 }
 /*Đo không đúng???*/
@@ -369,13 +409,136 @@ p span {
 }
 /*Đo không đúng???*/
 
-.transMar{
+/* .transMar{
     margin-bottom:75px;
+} */
+
+.abs-two{
+    padding: 56px 0 74px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.imgSec7Mar{
+    margin-top: 135px;
+    margin-bottom: 52px;
+}
+
+.container10{
+    padding:0 10px;
+    margin: 0 auto;
+}
+
+/*frame have to use JS to get the biggest frame*/
+.frame{
+    background-color: #f2f2f2;
+    width: 100%;
+    display: inline-block;
+}
+
+.lineframestyle{
+    width: calc(100% - 16px);
+}
+
+.frame__content{
+    font-size: 14px;
+}
+
+.frame__content:first-child{
+    margin-top:55px;
+}
+
+.frame__title{
+    font-size: 32px;
+}
+
+.frameMar{
+    margin-right: 16px;
+}
+
+.frameMar:last-of-type {
+    margin-right: 0;
+}
+
+.sec3Button-grey{
+    background-color: #666;
+}
+
+.LastGreyMar{
+    margin:80px 0 130px 0;
+}
+
+.footerButton{
+    width: 170px;
+    height: 38.149px;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', bold;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    margin:0;
+}
+
+.footercontainer{
+    max-width: 1380px;
+    padding:0 50px;
+    margin: 0 auto;
+}
+
+.footerlogoMar{
+    margin-right: 40px;
+}
+
+.footerText{
+    margin-right:30px; 
+}
+
+.tel{
+    font-size: 24px;
+    display: inline-block;
+}
+
+.footerInfo{
+    font-size: 12px;
+}
+
+h4{
+    font-weight: normal;
+    font-style: normal;
+}
+
+h4 br{
+    display: none;
+}
+
+.footerButton-black{
+    background-color:black;
+    display: inline-block;
+}
+
+.footerButton-grey{
+    background-color:#666;
+    display: inline-block;
+}
+
+.borTop{
+    border-top: 2px solid #ccc;
+}
+
+.footMarTop{
+    margin-top:42px;
 }
 /*------------------------------------------------------------------*/
 @media(min-width:768px){
     .hideImg1{
         display: none;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .specbg, .faqbg{
+        background-size: auto;
     }
 }
 @media(max-width:767px){
@@ -421,6 +584,7 @@ p span {
     }
 
     .whatis{
+        position: static;
         font-size: 55px;
     }
 
@@ -463,7 +627,7 @@ p span {
     }
 
     .car{
-        top:68px;
+        top:120px;
         left:170px;
     }
 
@@ -510,6 +674,7 @@ p span {
     .fontSas-lineup{
         font-size: 48px;
         margin-bottom: 26px;
+        margin-top:0;
     }
 
     .sec4Text{
@@ -539,6 +704,10 @@ p span {
         width: 100%;
     }
 
+    .hideImg2{
+        display: none;
+    }
+
     .housesMar{
         margin-right:37px;
     }
@@ -552,10 +721,174 @@ p span {
         padding: 0;
     }
 
-    .towcol{
+    .twocol{
         width:100%;
+        padding:0; 
     }
 
+    .fontSas-sec6{
+        font-size: 35px;
+    }
+
+    .dashWMar{
+        margin:15px 0 23px 0;
+    }
+    
+   
+/*Not right*/
+   .abs-two{
+    top: calc(50% - 75px);
+    left: calc(50% - 141px);
+    padding: 31px 0 42px 0;
+}
+
+    .sec7Text{
+        font-size: 13px;
+        margin-top: 41px;
+        margin-bottom: 40px; 
+    }
+
+    .blo{
+        display: block;
+    }
+
+    .imgSec7Mar{
+        margin-top: 66px;
+        margin-bottom: 55px;
+    }
+
+    .threecol{
+        width: 100%;
+    }
+
+    .threecol-Mar{
+        margin-bottom: 16px;
+    }
+    
+    
+    .threecol-Mar:last-child{
+        margin-right: 10000px;
+    }
+    .frame{
+        width: 100%;
+        height: auto;
+    }
+
+    .frame__content{
+        font-size: 13px;
+        margin-bottom: 36px;
+    }
+
+    .frame__content:first-child{
+        margin-top:44px;
+    }
+
+    .frame__title{
+        font-size: 20px;
+    }
+
+    .frameMar{
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .lineframestyle{
+        width: auto;
+    }
+    .LastGreyMar{
+        margin-top:29px;
+        margin-bottom:37px;
+    }
+    h4 br{
+        display: block;
+    }
+
+    .tel{
+        display: block;
+    }
+
+    .footerlogoMar{
+        margin-right: 0px;
+    }
+
+    .borTop{
+        border: 0;
+    }
+
+    .footMarTop{
+        margin:0;
+    }
+    
+    .borNav{
+        border-top: 1px solid #000;
+    }
+
+    .borNav:last-of-type {
+        border-bottom: 1px solid #000;
+    }
+
+    .footercontainer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerText{
+        padding: 20px 0 16px 0;
+        margin: 0;
+    }
+
+    h5{
+        font-size: 13px;
+        margin: 0;
+        padding-left:17px; 
+        position: relative;
+    }
+
+    h5::after{
+        content: '';
+        background-image: url("../images/arr.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        right:5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .footerButton{
+        width: 270px;
+        height: 57px;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .telButton{
+        width: 270px;
+        height: 57px;
+        font-size: 15px;
+        position: relative;
+        border: 2px solid #000;
+        background-color:none; 
+        color: #000;
+        border-radius: 0;
+        margin:0;
+    }
+
+    .footerButton::after, .telButton::after{
+        position: absolute;
+        content: '';
+        background-image: url("../images/arr_white.png");
+        background-repeat: no-repeat;
+        right:5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .buttMar{
+        margin-top:21px;
+    }
+
+
+    
 }
 
 
