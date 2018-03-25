@@ -1,6 +1,7 @@
 body, html{ 
     margin:0;
     padding:0;
+    font-family:"游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 a {
@@ -361,9 +362,9 @@ div > a > img {
 }
 
 .button{
-    width: 270px;
-    height: 57px;
-    font-size: 15px;
+    width: 330px;
+    height: 78px;
+    font-size: 18px;
     position: relative;
     color: #fff;
     font-family: 'Roboto Condensed';
@@ -378,7 +379,7 @@ div > a > img {
     content: '';
     background-image: url("../images/arr_white.png");
     background-repeat: no-repeat;
-    top:22px;
+    top:35px;
     right:5px;
     width: 30px;
     height: 30px;
@@ -450,6 +451,11 @@ div > a > img {
     display: inline-block;
 }
 
+.butCen__footBut-trans{
+    background-color:transparent;
+    color: #000;
+}
+
 h4{
     font-weight: normal;
     font-style: normal;
@@ -476,8 +482,19 @@ div > a{
 }
 
 .rel__abs-arrUp{
-    top:-200px;
+    top:-110px;
     right: -85px;
+}
+
+.butCen__footBut-trans{
+    font-size: 21px;
+}
+
+@media(max-width:1250px){
+    .rel__abs-arrUp{
+        top:-110px;
+        right: 15px;
+    }
 }
 @media(max-width:1080px){
     .aMar{
@@ -501,7 +518,16 @@ div > a{
     }
 }
 
+@media(max-width:319px){
+    .max320{
+        display: none;
+    }
+}
 @media(max-width:767px){
+    .hide1{
+        display: none;
+    }
+
     .aMar{
         margin: 0;
     }
@@ -626,6 +652,10 @@ div > a{
         margin-top: 45px ;
     }
 
+    .firstCol__mainText{
+        font-size: 43px;
+    }
+
     .thirdCol-mar{
         margin:30px 0 30px 0;
     }
@@ -638,6 +668,21 @@ div > a{
     .secondCol__content{
         margin:26px 0 45px 0;
         font-size: 13px;
+    }
+
+    /*PROBLEM*/
+    .button{
+        max-width: 270px;
+        width: 100%;
+        height: 57px;
+        font-size: 15px;
+    }
+
+    .button::after{
+        top:22px;
+        right:5px;
+        width: 30px;
+        height: 30px;
     }
 
     .button-mar{
@@ -669,13 +714,11 @@ div > a{
     }
 
     .butCen__footBut{
-        width: 270px;
         height: 57px;
         font-size: 15px;
-        position: relative;
     }
 
-    .butCen__footBut::after{
+    .butCen__footBut-black::after, .butCen__footBut-grey::after{
         position: absolute;
         content: '';
         background-image: url("../images/arr_white.png");
@@ -683,6 +726,30 @@ div > a{
         right:5px;
         width: 40px;
         height: 40px;
+    }
+
+    .butCen__footBut-black, .butCen__footBut-grey{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .butCen__footBut-trans::after{
+        position: absolute;
+        content: '';
+        background-image: url("../images/arr.png");
+        background-repeat: no-repeat;
+        right:5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .butCen__footBut-trans{
+        display: block;
+        width: 100%;
+        border:2px solid #000;
+        position: relative;
+        margin-bottom: 25px;
     }
 
     .buttMar{
@@ -742,7 +809,7 @@ div > a{
     }
 
     .rel__abs-arrUp{
-        top:10px;;
+        top:570px;
         right: 19px;
     }
     
