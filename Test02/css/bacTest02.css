@@ -475,6 +475,10 @@ div > a{
     display: inline-block;
 }
 
+.rel__abs-arrUp{
+    top:-200px;
+    right: -85px;
+}
 @media(max-width:1080px){
     .aMar{
         margin-right: 10px;
@@ -503,7 +507,6 @@ div > a{
     }
 
     .resizeLogoNav{
-        max-width: auto;
         max-height: 37.8px;
         padding: 8px 18px;
     }
@@ -530,8 +533,6 @@ div > a{
     }
 
     .header__resizeTree{
-        
-        max-width: auto;
         max-height: 64px;
     }
     .imgPC{
@@ -691,11 +692,12 @@ div > a{
     .tel{
         color: #000;
         border: 2px solid #000;
-        background-color:none;
+        background-color:transparent;
         display: inline-block;
         padding: 17px 76px;
         position: relative;
         font-size: 16px;
+        margin-bottom: 25px;
     }
 
     .tel::after{
@@ -737,6 +739,11 @@ div > a{
         right:5px;
         width: 50px;
         height: 50px;
+    }
+
+    .rel__abs-arrUp{
+        top:10px;;
+        right: 19px;
     }
     
 }
