@@ -19,14 +19,14 @@
           <img src="images/logohead.jpg" alt="Logo" class="resizeLogo">
         </a>
       </div>
-      <div class="inlBlo phoneMar hide">
+      <div class="inlBlo phoneMar hideNav">
         <a href="">
           <img src="images/phoneNum.png" alt="Phone">
         </a>
-        <button class="button button-black" type="button">見学会・イベント予約</button>
-        <button class="button button-red" type="button">お問い合わせ・資料請求</button>
+        <button class="button button-size button-black button-blackMar" type="button">見学会・イベント予約</button>
+        <button class="button button-size button-red button-redMar" type="button">お問い合わせ・資料請求</button>
       </div>
-      <p class="hide">
+      <p class="hideNav">
         <a href="a" class="marTextHead">TOP</a>
         <a href="a" class="marTextHead">パネットホームについて</a>
         <a href="a" class="marTextHead">施工実績</a>
@@ -35,6 +35,11 @@
         <a href="a" class="marTextHead">お客様インタビュー</a>
         <a href="a" class="marTextHead">家づくりコラム</a>
       </p>
+
+      <div class="floatR buttonsNav">
+          <button class="buttonCollapse buttonCollapse-black buttonCollapse-size" type="button">メニュー</button>
+          <button class="buttonCollapse buttonCollapse-red buttonCollapse-size" type="button">お問い合わせ資料請求</button>
+      </div>
     </nav>
   </header>
 
@@ -51,8 +56,8 @@
       <div class="rel__abs rel__abs-flag center">
         <img src="images/flag.png" alt="">
       </div>
-      <p class="sec2Title">見学会・イベント情報</p>
-      <p class="sec2Script">パネットホームの家づくりを体感しよう</p>
+      <h2 class="sec2Title">見学会・イベント情報</h2>
+      <h3 class="sec2Script">パネットホームの家づくりを体感しよう</h3>
       <div class="headContainer__col1">
         <img src="images/sec2.jpg" alt="Promo" class="widhun">
       </div>
@@ -72,32 +77,32 @@
   <section>
     <div class="icoMar">
       <img src="images/ico_house.png" alt="House">
-      <p class="title">施工実績</p>
+      <h2 class="title">施工実績</h2>
     </div>
 
     <ul class="clearfix">
       <li class="foucol foucol-hover">
         <img src="images/pic_sec301.jpg" alt="Pic 1" class="widhun">
-        <p class="foucol__title">快適なパッシブデザインの家</p>
-        <p class="foucol__content">水戸市住吉町 M様</p>
+        <h2 class="foucol__title">快適なパッシブデザインの家</h2>
+        <h3 class="foucol__content">水戸市住吉町 M様</h3>
         <div class="overlay"></div>
       </li>
       <li class="foucol foucol-hover">
         <img src="images/pic_sec302.jpg" alt="Pic 2" class="widhun">
-        <p class="foucol__title">健康で豊かに暮らすはだしの家</p>
-        <p class="foucol__content">大洗町磯浜町 M様</p>
+        <h2 class="foucol__title">健康で豊かに暮らすはだしの家</h2>
+        <h3 class="foucol__content">大洗町磯浜町 M様</h3>
         <div class="overlay"></div>
       </li>
       <li class="foucol foucol-hover">
         <img src="images/pic_sec303.jpg" alt="Pic 3" class="widhun">
-        <p class="foucol__title">快適なパッシブデザインの家</p>
-        <p class="foucol__content">水戸市住吉町 M様</p>
+        <h2 class="foucol__title">快適なパッシブデザインの家</h2>
+        <h3 class="foucol__content">水戸市住吉町 M様</h3>
         <div class="overlay"></div>
       </li>
       <li class="foucol foucol-hover">
         <img src="images/pic_sec304.jpg" alt="Pic 4" class="widhun">
-        <p class="foucol__title">健康で豊かに暮らすはだしの家</p>
-        <p class="foucol__content">大洗町磯浜町 M様</p>
+        <h2 class="foucol__title">健康で豊かに暮らすはだしの家</h2>
+        <h3 class="foucol__content">大洗町磯浜町 M様</h3>
         <div class="overlay"></div>
       </li>
     </ul>
@@ -107,44 +112,50 @@
     </div>
   </section>
 
-  <section>
+  <section class="greySec">
     <div class="icoMar">
-
       <img src="images/icon_sec3.png" alt="Leaf">
-      <h2 class="title">自然と共存する心地よい住まい</h2>
-    </div>
-    àasf
-    <!-- <section class="rel">
-    <div class="sec401">
-      <img src="images/pic_sec401.jpg" alt="Talking" class="widsec401">
-    </div>
-    <div class="rel__abs frame">
-        <p class="frame__num">01</p>
-        <img src="images/ico_dash.png" alt="dash" class="removelineheight">
-        <h3 class="frame__title">理想の住まいを叶える
-            <br>パッシブデザイン</h3>
-        <h4 class="frame__content">パッシブデザインの家は、無限にある自然エネルギーを活用した環境にもやさしい快適な住まいです。</h4>
-            <button type="button" class="buttonS">詳しく見る</button>
-    </div>
-  </section> -->
+      <h2 class="title title-leafMar">自然と共存する心地よい住まい</h2>
+    </div> 
+  </section>
+  
+  <section class="clearfix">
+      <div class="headContainer rel">
+          <div class="frame frame-top frame-L rel__abs">
+            <p class="frame__num">01</p>
+            <img src="images/ico_dash.png" alt="dash" class="removelineheight">
+            <h3 class="frame__title">理想の住まいを叶える
+              <br>パッシブデザイン</h3>
+            <h4 class="frame__content">パッシブデザインの家は、無限にある自然エネルギーを活用した環境にもやさしい快適な住まいです。</h4>
+            <button type="button" class="buttonS1">詳しく見る</button>
+          </div>
+        </div>
+    
+        <div class="bgSec4 bgSec4-R bgSec4-top">
+          <div class="areabgSec4"></div>
+        </div>
+  </section>
 
-    <!-- <section class="rel">
-    <div class="">
-      <img src="images/pic_sec401.jpg" alt="Talking" class="widsec401">
-    </div>
-    <div class="rel__abs frame">
-        <p class="frame__num">01</p>
-        <img src="images/ico_dash.png" alt="dash" class="removelineheight">
-        <h3 class="frame__title">理想の住まいを叶える
-            <br>パッシブデザイン</h3>
-        <h4 class="frame__content">パッシブデザインの家は、無限にある自然エネルギーを活用した環境にもやさしい快適な住まいです。</h4>
-            <button type="button" class="buttonS">詳しく見る</button>
-    </div>
-  </section> -->
+  <section class="clearfix leaf2">
+      <div class="headContainer rel">
+          <div class="frame frame-bottom frame-R rel__abs">
+            <p class="frame__num">02</p>
+            <img src="images/ico_dash.png" alt="dash" class="removelineheight">
+            <h3 class="frame__title">パネットホームの
+                <br>性能について</h3>
+            <h4 class="frame__content">お客様に日々快適な生活を送っていただくために高気密・高断熱・高耐震の住まいづくりを心がけています。</h4>
+            <button type="button" class="buttonS1">詳しく見る</button>
+          </div>
+        </div>
+
+        <div class="bgSec41 bgSec4-bottom bgSec4-L">
+            <div class="areabgSec4"></div>
+          </div>
+       
   </section>
 
   <section class="greySec">
-    <div class="icoMar">
+    <div class="icoMarChat">
       <img src="images/ico_chat.png" alt="Chat">
       <h2 class="title">お客様インタビュー</h2>
     </div>
@@ -245,9 +256,131 @@
   </section>
 
   <section class="greySec center">
-    <p class="footTitle">お気軽にお問い合わせください</p>
-    <p class="footScript">パネットホームの家づくりに関するご質問・ご相談は無料です</p>
+    <h2 class="footTitle">お気軽にお問い合わせください</h2>
+    <h3 class="footScript">パネットホームの家づくりに関する
+      <br>ご質問・ご相談は無料です</h3>
+    <ul class="footContainer clearfix">
+      <li class="footContainer__col1">
+        <p class="footContainer__title">電話でのお問い合わせ</p>
+        <div class="footContainer__buttonSP">
+          <p class="footContainer__phone">
+            <img src="images/ico_phone.png" alt="Phone"> 029-263-0212
+          </p>
+          <p class="footContainer__time">電話受付９:00〜18:00 水曜定休</p>
+
+          <p class="footContainer__blackSP">タップして電話をかけることができます</p>
+        </div>
+      </li>
+      <li class="footContainer__col2">
+        <p class="footContainer__title">メールでのお問い合わせ</p>
+        <div class="footContainer__button">
+          <button class="button button-sizefoot button-red button-redFootMar" type="button">お問い合わせ・資料請求</button>
+          <button class="button button-sizefoot button-black button-blackFootMar" type="button">見学会・イベント予約</button>
+        </div>
+      </li>
+    </ul>
   </section>
+
+  <footer class="footContainer">
+    <ul class="clearfix hide">
+      <li class="footContainer__colThi footLogo">
+        <img src="images/logohead.jpg" alt="">
+        <p>パネットホーム
+          <br>株式会社八文字建設</p>
+        <p>茨城県ひたちなか市田中後７－４</p>
+        <p>電話：029-263-0212</p>
+        <p>FAX：029-263-2138</p>
+      </li>
+      <li class="footContainer__colThi footArr">
+        <p>
+          <img src="images/arr_right.png" alt="Arrow"> TOP </p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">パネットホームについて </p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">理想の住まいを叶えるパッシブデザイン</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">快適・高気密・高断熱・高耐震の住まい</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">施工実績</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">お客様インタビュー</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">会社概要・代表挨拶</p>
+      </li>
+      <li class="footContainer__colThi footArr">
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">採用情報</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">見学会・イベント情報</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">家づくりコラム</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">プライバシーポリシー</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">サイトマップ</p>
+        <p>
+          <img src="images/arr_right.png" alt="Arrow">お問い合わせ・資料請求</p>
+      </li>
+    </ul>
+
+    <ul class="clearfix hideSP">
+        
+          <li class="footArr">
+            <p>
+              <img src="images/arr_right.png" alt="Arrow" class="maxwid10"> TOP </p>
+              <p>
+              <img src="images/arr_right.png" alt="Arrow" class="maxwid10">パネットホームについて </p>
+              <p>
+              <img src="images/arr_right.png" alt="Arrow" class="maxwid10">理想の住まいを叶えるパッシブデザイン</p>
+              <p>
+              <img src="images/arr_right.png" alt="Arrow" class="maxwid10">快適・高気密・高断熱・高耐震の住まい</p>
+              <p>
+              <img src="images/arr_right.png" alt="Arrow" class="maxwid10">施工実績</p>
+          </li>
+          
+          <li class="footArr clearfix">
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">施工実績</p>
+            </div>
+
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">お客様インタビュー</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">会社概要・代表挨拶</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">採用情報</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">見学会・イベント情報</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">家づくりコラム</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">プライバシーポリシー</p>
+            </div>
+            <div class="twocol twocol-mar">
+                <p>
+                    <img src="images/arr_right.png" alt="Arrow" class="maxwid10">サイトマップ</p>
+            </div>
+
+          </li>
+          <li class="footArr1">
+              <p>
+                  <img src="images/arr_right.png" alt="Arrow" class="maxwid10"> お問い合わせ・資料請求 </p>
+          </li>
+      </ul>
+    <p class="copyright">© 2018 PANET HOME inc.</p>
+  </footer>
 </body>
 
 </html>
