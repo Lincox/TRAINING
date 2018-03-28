@@ -90,7 +90,7 @@ div > a > img{
   vertical-align: middle;
 }
 
-.headContainer, .footContainer, .headContainer1{
+.container, .footContainer, .headContainer{
   max-width: 1000px;
   padding: 0 10px;
   margin: 0 auto;
@@ -177,16 +177,16 @@ div > a > img{
   float: right;
 }
 
-.marTextHead{
+.hideNav__marTextHead{
   margin-right: 38px;
   font-size: 14px
 }
 
-.marTextHead:last-of-type{
+.hideNav__marTextHead:last-of-type{
   margin-right: 0;
 }
 
-.marTextHead:hover{
+.hideNav__marTextHead:hover{
   border-bottom: 4px solid #d53230;
   padding-bottom: 8px; 
 }
@@ -213,7 +213,7 @@ div > a > img{
   vertical-align: middle;
 }
 
-.underHead__scale__title{
+.underHead__title{
   font-size: 40px;
   font-weight: bold;
 }
@@ -256,9 +256,15 @@ div > a > img{
   background-color: #f1f1f1;
 }
 
-.rel__abs-flag{
-  top:-12.5px;
-  left: calc(50% - 17px)
+.styleFlag{
+  text-align: center;
+  position: relative;
+}
+
+.styleFlag__flag{
+  position: absolute;
+  top: -21px;
+  left: calc(50% - 17px);
 }
 
 .sec2Title{
@@ -273,13 +279,13 @@ div > a > img{
   margin: 0 0 72px 0;
 }
 
-.headContainer__col1{
+.container__col1{
   width: 40.5%;
   float: left;
   margin:0 0 94px 0;
 }
 
-.headContainer__col2{
+.container__col2{
   width: calc(59.5% - 50px);
   float: left;
   text-align: left;
@@ -292,7 +298,7 @@ div > a > img{
   border: 2px solid #000;
 }
 
-.headContainer__col2__button{
+.container__button{
   font-size: 12px;
   border:1px solid #000;
   padding: 8px 12px;
@@ -300,16 +306,16 @@ div > a > img{
 
 }
 
-.headContainer__col2__date1{
+.container__date1{
   margin-right: 20px;
   font-size: 14px;
 }
 
-.headContainer__col2__date2{
+.container__date2{
   font-size: 14px;
 }
 
-.headContainer__col2__content{
+.container__content{
   font-size: 18px;
   font-weight: bold;
   margin: 0 0 40px 0;
@@ -323,7 +329,8 @@ div > a > img{
 
 .icoMarChat{
   text-align: center;
-  padding: 428px 0 0 0
+  padding: 428px 0 0 0;
+  margin-top: -285px;
 }
 
 .title{
@@ -332,7 +339,13 @@ div > a > img{
   font-weight: bold;
 }
 
-.title-leafMar{
+.title1{
+  font-size: 34px;
+  margin: 23px 0 0px 0;
+  font-weight: bold;
+}
+
+.title-leafMar, .title1-leafMar{
   padding-bottom: 400px; 
 }
 
@@ -391,10 +404,6 @@ div > a > img{
 
 .areaLeft__mar__text{
   margin: 26px 0 106px 0; 
-}
-
-.leaf2{
-  margin-top: 154px;
 }
 
 .bgSec4{
@@ -459,30 +468,26 @@ div > a > img{
 }
 
 .frame{
-  max-width: 376px;
-  max-height: 376px;
-  width: 376px;
-  height: 376px;
+  max-width: 375px;
+  max-height: 375px;
+  width: 375px;
+  height: 375px;
   border: 1px solid #a9a9a9;
   text-align: center;
   background-color: #fff;
 }
 
 .frame-top{
-  top: 79px;
+  position: absolute;
+  top: calc(50% - 188px);
 }
 
 .frame-bottom{
-  top: 79px;
+  position: absolute;
+  top: calc(50% - 188px);
+  right: 13%;
 }
 
-.frame-R{
-  right: 0;
-}
-
-.frame-L{
-  left: 0;
-}
 
 .frame__num{
   font-size: 48px;
@@ -720,11 +725,31 @@ div > a > img{
 }
 
 .leaf2Style{
-  text-align: right;
-  margin-top:-352px;
-  width: 71.43%; 
+  width: 70%; 
 }
 
+.leaf2Style-R{
+float: right;}
+
+.leaf2Style-L{
+  float: left;}
+
+
+.picandframe{
+  margin-top:-285px;
+  position: relative;
+}
+
+.picandframe1{
+  margin-top:155px;
+  position: relative;
+}
+
+.frameContainer{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 @media (max-width:1009px){
   .headMar, .underHead{
     margin: 0;
@@ -738,7 +763,7 @@ div > a > img{
     display: block;
   }
 
-  .buttonsNav{
+  .headMar__buttonsNav{
     width: 34%;
     float: right;
     padding-right: -10px;
@@ -763,7 +788,7 @@ div > a > img{
     background-color: #d53230;
   }
   
-  .headContainer1{
+  .headContainer{
     padding: 0;
   }
 }
@@ -858,6 +883,15 @@ div > a > img{
 }
 @media (max-width:767px){
 
+.styleFlag__flag{
+  position: static;
+  padding-top: 55px;
+}
+
+.resizeIco{
+  max-width: 22px;
+}
+  
   .buttonCollapse{
     height: 50px;
   }
@@ -881,7 +915,7 @@ div > a > img{
     display: none;
   }
 
-  .underHead__scale__title{
+  .underHead__title{
     font-size: 22px;
   }
   
@@ -905,11 +939,6 @@ div > a > img{
     margin-top: 20.94vw;
   }
 
-  .rel__abs-flag{
-    position: static;
-    padding-top: 52px;
-  }
-
 
   .sec2Title{
     font-size: 22px;
@@ -921,21 +950,21 @@ div > a > img{
     margin: 0 0 35px 0;
   }
 
-  .headContainer__col1{
+  .container__col1{
     width: 100%;
     margin:0;
   }
 
-  .headContainer__col2{
+  .container__col2{
     width: 100%;
     margin: 22px 0;
   }
 
-  .headContainer__col2__date1, .headContainer__col2__date2{
+  .container__date1, .container__date2{
     font-size: 12px;
   }
 
-  .headContainer__col2__content{
+  .container__content{
     font-size: 15px;
   }
 
@@ -1103,43 +1132,71 @@ div > a > img{
 
 
   /*leaf*/
-  .title-leafMar{
+  .title1{
+    font-size: 21px;
+    margin: 16px 0 39px 0;
+  }
+
+  .title1-leafMar{
     padding-bottom: 110px; 
     margin: 0;
   }
+  
+  .leaf2Style{
+    width: 100%; 
+  }
+  
+  .leaf2Style-R, .leaf2Style-L{
+  float: none;
+}
 
-  .leaf2{
-    margin-top: 0;
+  .picandframe{
+    margin-top:-64px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
   }
   
-  .bgSec4, .bgSec41{
-    background-size: 100% auto;
-    width: calc(100% - 30px);
-    margin: 0 15px;
-    }
-  
-  .bgSec4-top{
-    margin-top: -80px;
-  }
-  
-  .bgSec4-bottom{
-    margin-bottom: -352px;
-  }
-  
-  .bgSec4-R{
-    float: right;
-  }
-  
-  .bgSec4-L{
-    float: left;
-  }
-  
-  .areabgSec4{
-    width: 100%;
-    height: 435px;
+  .picandframe1{
+    margin-top:90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
   }
   
   .frame{
+    max-width: 768px;
+    max-height: 768px;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .frame-top{
+    position: static;
+  }
+  
+  .frame-bottom{
+    position: static;
+  }
+  
+  
+  .frame__num{
+    font-size: 36px;
+    margin:-8px 0 15px 0;
+  }
+  
+  .frame__title{
+    font-size: 18px;
+    margin: 9px 0 15px 0;
+  }
+  
+  .frame__content{
+    font-size: 13px;
+    padding: 0 15px;
+  }
+  /* .frame{
     max-width: 768px;
     width: 100%;
     height: auto;
@@ -1149,7 +1206,7 @@ div > a > img{
   }
   
   .frame-top{
-    top: 0;
+    bottom: 0;
   }
   
   .frame-bottom{
@@ -1157,7 +1214,7 @@ div > a > img{
   }
   
   .frame__num{
-    font-size: px;
+    font-size: 48px;
     font-family: 'Roboto Condensed';
     margin:74px 0 15px 0;
     line-height: 0;
@@ -1173,6 +1230,6 @@ div > a > img{
     font-size: 13px;
     padding: 0 30px;
     margin-bottom: 20px;
-  }
+  } */
   
 }
