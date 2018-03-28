@@ -6,7 +6,6 @@ body, html{
 }
 
 /*font-family: 'Roboto Condensed';*/
-
 a {
   color: #000;
   text-decoration: none; /* no underline */
@@ -85,7 +84,7 @@ li{
   padding: 0;
 }
 
-div > a > img{
+div a img{
   display: inline-block;
   vertical-align: middle;
 }
@@ -202,22 +201,29 @@ div > a > img{
 
 .areaUnder{
   width: 100%;
-  height: 56.233333vw;
+  height: 44.21428vw;
   display: table;
  
 }
 
 .underHead__scale{
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .underHead__title{
+  position: absolute;
   font-size: 40px;
   font-weight: bold;
+  top: calc(25.848% - 10px);
+  left: calc(50% - 246px);
+  text-align: center;
 }
 
+.underHead__button{
+  position: absolute;
+  top: 59.128%;
+  left: calc(50% - 109px);
+}
 .buttonR{
   width: 218px;
   height: 42px;
@@ -263,7 +269,7 @@ div > a > img{
 
 .styleFlag__flag{
   position: absolute;
-  top: -21px;
+  top: -12px;
   left: calc(50% - 17px);
 }
 
@@ -694,24 +700,24 @@ div > a > img{
   font-size: 12px;
 }
 
-.footArr > p > img{
+.footArr p img{
   margin-right: 10px;
 }
 
-.footArr > p {
+.footArr p {
   font-size: 14px;
   margin-top: 35px;
 }
 
-.footArr > p:first-child{
+.footArr p:first-child{
   margin-top: 0px;
 }
 
-.footLogo > p {
+.footLogo p {
   font-size: 14px;
 }
 
-.footLogo > p:nth-child(2){
+.footLogo p:nth-child(2){
   font-size: 18px;
   font-weight: bold;
 }
@@ -724,20 +730,17 @@ div > a > img{
   display: none;
 }
 
-.leaf2Style{
-  width: 70%; 
-}
+.leaf2StyleR{
+text-align: right;}
 
-.leaf2Style-R{
-float: right;}
-
-.leaf2Style-L{
+.leaf2StyleL{
   float: left;}
 
 
 .picandframe{
   margin-top:-285px;
   position: relative;
+  width: 100%;
 }
 
 .picandframe1{
@@ -793,6 +796,9 @@ float: right;}
   }
 }
 
+.maxwidhun{
+  max-width: 100%; 
+}
 @media(max-width: 866px){
   .footContainer__title{
     font-size: 16px;
@@ -811,6 +817,7 @@ float: right;}
   }
 
   .footContainer__buttonSP{
+    float: left;
     border: 1px solid #000;
     margin: 0 16px 25px 16px;
     position: relative;
@@ -1086,22 +1093,22 @@ float: right;}
     display: block;
   }
 
-  .footArr > p > img{
+  .footArr p img{
     margin-right: 10px;
   }
   
-  .footArr > p, .twocol > p, .footArr1 > p{
+  .footArr p, .twocol p, .footArr1 p{
     font-size: 13px;
     padding: 15px 0;
     margin: 0;
     border-bottom: 2px dotted #000;
   }
   
-  .footArr > p:first-child{
+  .footArr p:first-child{
     margin-top: 40px;
   }
 
-  .footArr > div > p > img{
+  .footArr div p img{
     margin-right: 10px;
   }
 
@@ -1196,40 +1203,4 @@ float: right;}
     font-size: 13px;
     padding: 0 15px;
   }
-  /* .frame{
-    max-width: 768px;
-    width: 100%;
-    height: auto;
-    border: none;
-    text-align: center;
-    background-color: transparent;
-  }
-  
-  .frame-top{
-    bottom: 0;
-  }
-  
-  .frame-bottom{
-    top: 79px;
-  }
-  
-  .frame__num{
-    font-size: 48px;
-    font-family: 'Roboto Condensed';
-    margin:74px 0 15px 0;
-    line-height: 0;
-  }
-  
-  .frame__title{
-    font-size: 18px;
-    margin: 9px 0 15px 0;
-    font-weight: bold;
-  }
-  
-  .frame__content{
-    font-size: 13px;
-    padding: 0 30px;
-    margin-bottom: 20px;
-  } */
-  
 }
