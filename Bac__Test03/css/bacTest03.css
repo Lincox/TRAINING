@@ -5,6 +5,10 @@ body, html{
   background-color: #fff;
 }
 
+section{
+  font-size: 0;
+}
+
 /*font-family: 'Roboto Condensed';*/
 a {
   color: #000;
@@ -49,10 +53,6 @@ button{
   display: table;
 }
 
-.fixT{
-  position: fixed;
-}
-
 .floatR {
   float:right;
   font-size: 0;
@@ -89,18 +89,41 @@ div a img{
   vertical-align: middle;
 }
 
-.container, .footContainer, .headContainer{
+.fixtop{
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.container, .headContainer{
   max-width: 1000px;
-  padding: 0 10px;
+  padding: 0 16px 0 15px;
   margin: 0 auto;
 }
+
+.footContainer{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footContainer-1{
+  padding: 0 17.5px;
+}
+
+.footContainer-2{
+  padding: 0 10px;
+}
+
 
 .styleHead{
   background-color: #fff
 }
 
 .headMar{
-  margin-top: 21px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .headMar__logoMar{
@@ -120,10 +143,10 @@ div a img{
 .button-size::after{
   position: absolute;
   content: '';
-  background-image: url("../images/arr.png");
+  background-image: url("../images/ico_circle.gif");
   background-repeat: no-repeat;
   top:18px;
-  right:9px;
+  right:12px;
   width: 18px;
   height: 18px;
 }
@@ -172,7 +195,7 @@ div a img{
 }
 
 .headMar__phoneMar{
-  margin-bottom: 43px;
+  margin-bottom: 39px;
   float: right;
 }
 
@@ -191,12 +214,7 @@ div a img{
 }
 
 .underHead{
-  background-image: url("../images/pic_main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: auto; 
-  height: auto;
-  margin-top:35px;
+  padding-top: 166px;
 }
 
 .areaUnder{
@@ -214,47 +232,61 @@ div a img{
   position: absolute;
   font-size: 40px;
   font-weight: bold;
-  top: calc(25.848% - 10px);
+  top: calc(41.78% - 10px);
   left: calc(50% - 246px);
   text-align: center;
 }
 
 .underHead__button{
   position: absolute;
-  top: 59.128%;
+  top: 67.516%;
   left: calc(50% - 109px);
 }
+
 .buttonR{
-  width: 218px;
-  height: 42px;
   font-size: 14px;
-  position: relative;
   border-radius: 0;
   margin:0;
   padding: 0;
   text-align: center;
-}
-
-.buttonR-white{
   color: #000;
   background: #fff;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
-.buttonR::after{
+.buttonR-headsize{
+  position: relative;
+  width:218px;
+  height: 42px;
+}
+
+.buttonR-mainsize{
+  position: relative;
+  width:260px;
+  height: 50px;
+}
+
+.buttonR-headsize::after, .buttonR-mainsize::after {
   position: absolute;
   content: '';
-  background-image: url("../images/arr_right.png");
   background-repeat: no-repeat;
-  top:14.5px;
-  right:-11px;
-  width: 17px;
-  height: 10px;
   text-align: right;
 }
 
-.buttonR-mar{
-  margin-top: 7.143vw;
+.buttonR-headsize::after {
+  background-image: url("../images/arr_right.png");
+  width: 17px;
+  height: 10px;
+  top:14.5px;
+  right:-11px;
+}
+
+.buttonR-mainsize::after {
+  background-image: url("../images/ico_arr.gif");
+  width: 22px;
+  height: 11px;
+  top:17.5px;
+  right:-14px;
 }
 
 /**/
@@ -286,7 +318,7 @@ div a img{
 }
 
 .container__col1{
-  width: 40.5%;
+  width: 35.3%;
   float: left;
   margin:0 0 94px 0;
 }
@@ -298,23 +330,23 @@ div a img{
   margin: 0 0 0 50px;
 }
 
-.buttonR-grey{
-  color: #000;
-  background: #f1f1f1;
-  border: 2px solid #000;
-}
-
 .container__button{
+  float: left;
   font-size: 12px;
   border:1px solid #000;
-  padding: 8px 12px;
-  margin: 0 30px 32px 0;
+  width: 90px;
+  height: 26px;
+  margin: 0 30px 40px 0;
+}
 
+.container__date{
+  margin: 0 0 50px 0;
 }
 
 .container__date1{
   margin-right: 20px;
   font-size: 14px;
+  float: left;
 }
 
 .container__date2{
@@ -356,10 +388,15 @@ div a img{
 }
 
 .foucol{
-  width: calc(25% - 5px);
+  width: 24.71428%;
   float: left;
-  margin: 0 2.5px;
+  margin-right: 0.3571428%;
   position: relative;
+}
+
+
+.foucol:last-child{
+  margin-right: 0; 
 }
 
 
@@ -490,8 +527,8 @@ div a img{
 
 .frame-bottom{
   position: absolute;
-  top: calc(50% - 188px);
-  right: 13%;
+  top: calc(100% - 457px);
+  right: 0;
 }
 
 
@@ -516,24 +553,29 @@ div a img{
 }
 
 .foucol1{
-  width: 25%;
-  float: left;;
+  width: 21%;
+  float: left;
+  margin-right: 5.3125%;
 }
 
-.foucol1__img{
-  margin: 0 8%;
+.foucol1:last-child{
+  margin-right: 0;
+}
+
+.foucol1:last-child{
+  margin-right: 0;
 }
 .foucol1__title{
   font-size: 16px;
   font-weight: bold;
-  margin: 15px 8% 20px 8%;
+  margin: 15px 0 20px 0;
   text-decoration: underline;
 }
 
 /*Problem*/
 .foucol1__content{
   font-size: 14px;
-  margin: 0 8%;
+  margin: 0;
 }
 
 .container800{
@@ -734,18 +776,30 @@ div a img{
 text-align: right;}
 
 .leaf2StyleL{
-  float: left;}
+  text-align: left}
 
 
 .picandframe{
   margin-top:-285px;
   position: relative;
-  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .picandframe1{
   margin-top:155px;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.picandframe1__container{
   position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .frameContainer{
@@ -753,9 +807,14 @@ text-align: right;}
   margin: 0 auto;
   padding: 0 0;
 }
+
+.maxwidhun{
+  max-width: 100%;
+}
+
 @media (max-width:1009px){
   .headMar, .underHead{
-    margin: 0;
+    padding: 0;
   }
   
   .hideNav {
@@ -767,9 +826,8 @@ text-align: right;}
   }
 
   .headMar__buttonsNav{
-    width: 34%;
+    width: 34.375%;
     float: right;
-    padding-right: -10px;
   }
 
   .buttonCollapse{
@@ -785,20 +843,43 @@ text-align: right;}
 
   .buttonCollapse-black{
     background-color: #000;
+    position: relative;
+    padding: 27px 0 0 0;
+  }
+
+  .buttonCollapse-black::after{
+    position: absolute;
+    content: '';
+    background-image: url("../images/ico_3line.gif");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 13px;
+    top: 10px;
+    left: calc(50% - 9px);
   }
 
   .buttonCollapse-red{
     background-color: #d53230;
+    position: relative;
+    padding: 20px 0 0 0;
+  }
+
+  .buttonCollapse-red::after{
+    position: absolute;
+    content: '';
+    background-image: url("../images/ico_ques.png");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 12px;
+    top: 10px;
+    left: calc(50% - 4px);
   }
   
   .headContainer{
-    padding: 0;
+    padding: 0 0 0 13px;
   }
 }
 
-.maxwidhun{
-  max-width: 100%; 
-}
 @media(max-width: 866px){
   .footContainer__title{
     font-size: 16px;
@@ -817,7 +898,6 @@ text-align: right;}
   }
 
   .footContainer__buttonSP{
-    float: left;
     border: 1px solid #000;
     margin: 0 16px 25px 16px;
     position: relative;
@@ -886,19 +966,22 @@ text-align: right;}
     padding-left: 55px;
     margin: 0;
   }
-
 }
+
 @media (max-width:767px){
+  .styleFlag__flag{
+    position: static;
+    padding-top: 55px;
+  }
 
-.styleFlag__flag{
-  position: static;
-  padding-top: 55px;
-}
-
-.resizeIco{
-  max-width: 22px;
-}
+  .resizeIco{
+    max-width: 22px;
+  }
   
+  .heista{
+    height: 402px;
+  }
+
   .buttonCollapse{
     height: 50px;
   }
@@ -924,28 +1007,47 @@ text-align: right;}
 
   .underHead__title{
     font-size: 22px;
+    top: calc(25.848% - 10px);
+    left: calc(50% - 135px);
+    text-align: center;
   }
   
+  .underHead__button{
+    position: absolute;
+    top: 66.4179%;
+    left: calc(50% - 91px);
+  }
+
   .buttonR{
-    max-width: 192px;
-    width: 100%;
-    height: 36px;
     font-size: 13px;
   }
-
-  .buttonR::after{
-    top:12px;
-    right:-11px;
+  
+  .buttonR-headsize{
+    width:182.5px;
+    height: 36px;
+  }
+  
+  .buttonR-mainsize{
+    width: 230px;
+    height: 50px;
+  }
+  
+  .buttonR-headsize::after, .buttonR-mainsize::after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
     text-align: right;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
   }
-
-  .buttonR-mar{
-    margin-top: 20.94vw;
+  
+  .buttonR-headsize::after {
+    top:13px;
+    right:-9.5px;
   }
-
+  
+  .buttonR-mainsize::after {
+    top:19px;
+    right:-13px;
+  }
 
   .sec2Title{
     font-size: 22px;
@@ -964,11 +1066,27 @@ text-align: right;}
 
   .container__col2{
     width: 100%;
-    margin: 22px 0;
+    margin: 22px 0 62.5px 0;
   }
 
-  .container__date1, .container__date2{
+  .container__button{
+    width: 92px;
+    height: 29px;
+    margin: 0 11px 22px 0;
+  }
+  
+  .container__date{
+    margin: 0 0 22px 0;
+  }
+  
+  .container__date1{
+    line-height: 1.1;
     font-size: 12px;
+  }
+  
+  .container__date2{
+    font-size: 12px;
+    float:none;
   }
 
   .container__content{
@@ -977,10 +1095,6 @@ text-align: right;}
 
   .centerSP{
     text-align: center
-  }
-
-  .buttonR-grey{
-    margin-bottom: 63px;
   }
 
   .house{
@@ -993,43 +1107,47 @@ text-align: right;}
   }
 
   .foucol{
-    width: calc(50% - 5px);
+    width: 49.375%;
+    margin-right: 0.9375%;
   }
-
+  
+  .foucol:nth-child(2n + 0){
+    margin-right: 0; 
+  }
+  
+  
   .foucol__title{
     font-size: 15px;
-    margin: 14px 0 12px 10px;
+    margin: 12px 0 13px 10.5px;
   }
-
+  
   .foucol__content{
     font-size: 12px;
-    margin: 0 0 47px 10px;
-  }
-
-  .foucol__content:nth-child(3), .foucol__content:nth-child(4){
-    margin: 0 0 0 10px;
+    margin: 0 0 47px 10.5px;
   }
 
   .foucol1{
-    width: 50%;
+    width: 45.6477%;
+    margin: 0 8.4775% 0 0;
   }
 
-  .foucol1__img{
-    margin: 0 3.25%;
+  .foucol1:nth-child(2n + 0){
+    margin: 0;
   }
+
   .foucol1__title{
     font-size: 13px;
-    margin: 17px 3.25%;
+    margin: 16px 0;
   }
   
   /*Problem*/
   .foucol1__content{
     font-size: 12px;
-    margin: 0 3.25% 51px 3.25%;
+    margin-bottom: 51px;
   }
 
   .buttonR-mar1{
-    margin: 15.625vw 0 27.5vw 0;
+    margin: 4px 0 88.5px 0;
   }
 
 
@@ -1092,28 +1210,16 @@ text-align: right;}
   .hideSP{
     display: block;
   }
-
-  .footArr p img{
-    margin-right: 10px;
-  }
   
   .footArr p, .twocol p, .footArr1 p{
     font-size: 13px;
     padding: 15px 0;
     margin: 0;
-    border-bottom: 2px dotted #000;
-  }
-  
-  .footArr p:first-child{
-    margin-top: 40px;
-  }
-
-  .footArr div p img{
-    margin-right: 10px;
+    border-bottom: 1px dotted #000;
   }
 
   .twocol{
-    width: calc(50% - 10px);
+    width: calc(50% - 22.5px);
     float: left;
   }
   .twocol p{
@@ -1121,11 +1227,11 @@ text-align: right;}
   }
 
   .twocol-mar{
-    padding:0 8px 0 0;
+    padding:0 22.5px 0 0;
   }
 
   .twocol-mar:nth-child(2), .twocol-mar:nth-child(4), .twocol-mar:nth-child(6), .twocol-mar:nth-child(8) {
-    padding:0 0 0 8px;
+    padding:0 0 0 0;
   }
 
   .maxwid10{
@@ -1155,7 +1261,7 @@ text-align: right;}
   
   .leaf2Style-R, .leaf2Style-L{
   float: none;
-}
+  }
 
   .picandframe{
     margin-top:-64px;
