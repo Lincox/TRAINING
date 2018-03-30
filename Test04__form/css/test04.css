@@ -1,0 +1,39 @@
+.head {
+  margin: 21px 0;
+  padding-bottom: 17px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #ddd; }
+  .head__text {
+    position: absolute;
+    right: 16px;
+    top: -7px;
+    margin: 0;
+    font-size: 11px; }
+
+.title {
+  font-size: 22px;
+  background-color: #221d64;
+  color: white;
+  padding: 22px 0 24px 0;
+  margin-bottom: 60px; }
+
+.script {
+  font-size: 16px; }
+
+.url {
+  font-size: 12px; }
+  .url--top {
+    text-decoration: underline;
+    margin-right: 5px;
+    margin-left: 251px;
+    padding-bottom: 50px; }
+  .url--next {
+    margin-left: 6px; }
+
+.maintitle {
+  text-align: center;
+  margin: 50px 0 70px 0;
+  font-size: 28px; }
+
+/*# sourceMappingURL=test04.css.map */
