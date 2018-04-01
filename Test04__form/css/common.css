@@ -3,10 +3,15 @@ body, html{
   padding:0;
   background-color: #fff;
   color: #000;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .center{
   text-align: center;
+}
+
+.middle{
+  vertical-align: middle;
 }
 
 section{
@@ -61,4 +66,9 @@ li{
 
 .center{
   text-align: center;
+}
+
+tr, th, td{
+  margin: 0;
+  padding: 0;
 }

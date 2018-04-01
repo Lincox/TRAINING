@@ -1,5 +1,9 @@
 $primary-blue: #221d64;
 $line-color: #ddd;
+$col1-color: #F9F2F2;
+$red: #B51019;
+$darkgrey: #1E1E1E;
+$lightgreen: #f8f8f8;
 
 .head{
   margin: 21px 0;
@@ -15,28 +19,30 @@ $line-color: #ddd;
     font-size: 11px;
   }
 }
-.title{
-  font-size: 22px;
-  background-color: $primary-blue;
-  color: white;
-  padding: 22px 0 24px 0;
-  margin-bottom: 60px;
-  &--mar1{
+
+.blueban{
+  text-align: center;
+  &__title{
+    font-size: 22px;
+    background-color: $primary-blue;
+    color: white;
+    padding: 22px 0 24px 0;
   }
-  &--mar2{
+  &__script{
+    font-size: 16px;
+    margin: 60px 0 38px 0;
+  }
+
+  &__time{
+    font-size: 12px;
+    margin: 0;
+  }
+  &__timemar{
+    margin: 0 0 62px 0;
   }
 }
 
-.script{
-  font-size: 16px;
-  &--mar1{
 
-  }
-
-  &--mar2{
-
-  }
-}
 .url{
   font-size: 12px;
   &--top{
@@ -54,4 +60,289 @@ $line-color: #ddd;
   text-align: center;
   margin: 50px 0 70px 0;
   font-size: 28px;
+}
+
+.formcontainer{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  &--mar{
+    border-collapse: collapse;
+    margin-bottom: 80px;
+  }
+  &--marstep1{
+    border-collapse: collapse;
+    margin-bottom: 29px;
+  }
+  
+  &__bor{
+    border: 1px solid black;
+    border: 1px solid $line-color;
+  }
+  &__col1{
+    width: 33.75%;
+    font-size: 15px;
+   &--green{
+    background-color: $lightgreen;
+   }
+   &--red{
+    background-color: $col1-color;
+   }
+   &__text{
+     display: inline-block;
+     &--main{
+      margin-left: 13px;
+     }
+     &--step1{
+      margin-left: 30px;
+    }
+   }
+   
+  }
+  &__col2{
+    width: 66.25%;
+    padding: 24px 0 21px 13px;
+    &--text{
+      font-size: 14px;
+      text-decoration: underline;
+      color: $red;
+      margin-left: 20px;
+    }
+    &--step1{
+      padding-left: 34px;
+    }
+  }
+  &__ban{
+    font-size: 13px;
+    padding: 5px 12px;
+    margin: 0 0 0 12px;
+    color: #fff;
+    &--red{
+      background-color: $red;
+    }
+    &--grey{
+      background-color: $darkgrey;
+    }
+  }
+
+  &__inputdate{
+    margin-bottom: 8px;
+  }
+}
+
+.container{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  &__butts{
+    margin-bottom:30px;
+  }
+  &__under{
+    font-size: 14px;
+    color: $darkgrey;
+    margin-top: 47px;
+    margin-bottom: 39px;
+    &--red{
+      color: $red;
+    }
+  }
+  &__step{
+    color: white;
+    text-align: left;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    &--1{
+      background-image: url("../images/img_tab01.png");
+      float: left;
+    }
+    &--2{
+      background-image: url("../images/img_tab02.png");
+      margin-left: -8px;
+      float: left;
+    }
+    &--3{
+      background-image: url("../images/img_tab03.png");
+      float: left;
+      margin-left: -10px;
+    }
+    &__num{
+      font-size: 12px;
+      margin: 15px 0 12px 0;
+      display: inline-block;
+      &--1{
+        margin-left: 20px; 
+      }
+
+      &--2{
+        margin-left: 29px; 
+      }
+
+      &--3{
+        margin-left: 29px; 
+      }
+    }
+    &__name{
+      font-size: 17px;
+      display: inline-block;
+      &--1{
+        margin: 0 90px 0 74px;
+      }
+      &--2{
+        margin: 0 81px 0 90px;
+      }
+      &--3{
+        margin: 0 94px 0 80px;
+      }
+    }
+  }
+}
+.foot{
+  border-top: 2px solid $line-color;
+  text-align: center;
+  &__text{
+    font-size: 13px;
+    color: $darkgrey;
+    text-align: left;
+    margin-top:37px;
+  }
+  &__redbut{
+    background: $red;
+    width: 450px;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 80px
+  }
+  &__agree{
+    font-size: 16px;
+    margin: 85px 0 40px 0;
+    display: block;
+  }
+  &__info{
+    font-size: 12px;
+  }
+
+  &__mail{
+    font-size: 12px;
+    color: $red;
+    text-decoration: underline;
+  }
+  
+  &__copyright{
+    margin-top:100px;
+    font-size: 10px;
+    color: $darkgrey;
+  }
+  
+}
+.bigin{
+  width: 478px;
+  height: 42px;
+  padding-left: 18px; 
+}
+
+.bigtextarea{
+  width: 478px;
+  height: 240px;
+  padding-left: 18px; 
+}
+
+.smallin{
+  width: 160px;
+  height: 42px;
+  padding-left: 18px; 
+  &--mar{
+    margin-left: 18px;
+    margin-bottom: 4px;
+  }
+}
+
+.link{
+  margin-bottom: 58px; 
+}
+
+
+
+
+
+
+
+/*index*/
+
+select {
+  width: 340px;
+  height: 46px;
+  font-size: 14px;
+  padding-left: 18px; 
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+input{
+  width: 318px;
+  height: 42px;
+  padding-left: 18px; 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../images/ico_calendar.png") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+/*Placeholder for date*/
+/*NOTE: Can use for MS*/
+input[type="date"]::before {
+	color: $line-color;
+  content: attr(placeholder);
+  font-size: 14px;
+}
+
+input[type="date"] {
+  color: #ffffff;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #000;
+  font-size: 14px;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}
+
+/*styling checkbox*/
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+
+/*Styling paceholder*/
+::placeholder {
+  color: $line-color;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: $line-color;
+ font-size: 14px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: $line-color;
+ font-size: 14px;
+}
+
+.formcontainer th{
+  text-align: left;
 }
