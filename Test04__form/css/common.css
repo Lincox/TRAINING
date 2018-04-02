@@ -72,3 +72,18 @@ tr, th, td{
   margin: 0;
   padding: 0;
 }
+
+.hide{
+  display: none;
+}
+
+@media (max-width: 767px)
+{
+  .hide{
+  display: block;
+  }
+
+  .hidesp{
+    display: none;
+  }
+}

@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/test04.css">
   <link rel="stylesheet" href="css/common.css">
+
 </head>
 
 <body>
@@ -22,9 +23,7 @@
   <span class="url">&gt;</span>
   <a href="" class="url url--next">お問い合わせ</a>
   <section class="center">
-    <div class="maintitle">
-      <h1 class="">お問い合わせ</h1>
-    </div>
+    <h1 class="maintitle">お問い合わせ</h1>
   </section>
 
   <div class="blueban">
@@ -35,18 +34,21 @@
     <h3 class="blueban__script">ご質問やお問い合わせもお気軽にどうぞ</h3>
 
     <div class="blueban__timemar">
-      <img src="images/img_phonenum.png" alt="phone" class="middle">
+      <img src="images/img_phonenum.png" alt="phone" class="blueban__phonenum">
       <span class="blueban__time">【営業時間】00:00〜00:00（◯・◯を除く）</span>
     </div>
 
     <h2 class="blueban__title">WEBからのお問い合わせ</h2>
     <div class="container">
-      <p class="container__under">お問い合わせ内容と必要項目を入力し、「入力内容を確認する」ボタンを押してください。
+      <p class="container__under">お問い合わせ内容と必要項目を入力し、
+        <span class="break">「入力内容を確認する」ボタンを押してください。</span>
         <br>
         <span class="container__under--red">【必須】</span>項目は必ず入力してください。
       </p>
-      <ul>
-        <li class="container__step container__step--1">
+      <div class="container__pad">
+        <img src="images/img_steps.jpg" alt="" class="hidesp widhun">
+        <img src="images/img_stepsp.jpg" alt="" class="hide widhun">
+        <!-- <li class="container__step container__step--1">
           <p class="container__step__num container__step__num--1">STEP1</p>
           <p class="container__step__name container__step__name--1">入力</p>
         </li>
@@ -59,8 +61,8 @@
         <li class="container__step container__step--3">
           <p class="container__step__num container__step__num--3">STEP3</p>
           <p class="container__step__name container__step__name--3">完了</p>
-        </li>
-      </ul>
+        </li> -->
+      </div>
     </div>
   </div>
 
@@ -68,12 +70,12 @@
     <tr class="formcontainer__bor">
       <th class="formcontainer__col1 formcontainer__col1--red">
         <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">お問い合わせ内容</p> 
+        <p class="formcontainer__col1__text formcontainer__col1__text--main">お問い合わせ内容</p>
       </th>
       <td class="formcontainer__col2">
-        <select name="" id="">
-          <option value="インストラクターの派遣">インストラクターの派遣</option>
-          <option value="スタジオレンタル" selected="selected">スタジオレンタル</option>
+        <select name="" id="type">
+          <option value="opt1">インストラクターの派遣</option>
+          <option value="opt2">スタジオレンタル</option>
           <option value="レッスンに関するご質問・お問い合わせ">レッスンに関するご質問・お問い合わせ</option>
           <option value="イベントの出演依頼">イベントの出演依頼</option>
           <option value="その他">その他</option>
@@ -81,121 +83,187 @@
       </td>
     </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">ご希望のスタジオ</p>
-      </th>
-      <td class="formcontainer__col2">
-        <select name="選択してください" id="">
-          <option value="" disabled selected>選択してください</option>
-          <option value="スタジオレンタル">伏見校スタジオ La Habana</option>
-          <option value="レッスンに関するご質問・お問い合わせ">伏見校スタジオ Cave</option>
-          <option value="イベントの出演依頼">栄校スタジオ Sahara</option>
-          <option value="その他">星ヶ丘校スタジオ STELLA</option>
-        </select>
-      </td>
-    </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">レンタル希望日</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="date" name="" id="" class="formcontainer__inputdate" placeholder="例） 0000/00/00" required>
-        <input type="date" name="" id="" placeholder="例） 0000/00/00" required>
-        <a href="" class="formcontainer__col2--text">希望日を追加</a>
-      </td>
-    </tr>
+    <tbody class="page1">
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">ご希望のジャンル</p>
+        </th>
+        <td class="formcontainer__col2">
+          <select name="選択してください" id="">
+            <option value="" disabled selected>選択してください</option>
+            <option value="スタジオレンタル">ラ アバナ</option>
+            <option value="レッスンに関するご質問・お問い合わせ">ケイブ</option>
+            <option value="イベントの出演依頼">サハラ</option>
+            <option value="その他">ステラ</option>
+          </select>
+        </td>
+      </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">フリガナ</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 山田 花子">
+        </td>
+      </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">フリガナ</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） ヤマダ ハナコ">
+        </td>
+      </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">会社・団体名</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 株式会社サルサベリー">
+        </td>
+      </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">電話番号</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 00000000000">
+        </td>
+      </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">メールアドレス</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） sample@sample.com">
+        </td>
+      </tr>
+    </tbody>
+    <tbody  class="page2">
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">ご希望のスタジオ</p>
+        </th>
+        <td class="formcontainer__col2">
+          <select name="選択してください" id="">
+            <option value="" disabled selected>選択してください</option>
+            <option value="スタジオレンタル">伏見校スタジオ La Habana</option>
+            <option value="レッスンに関するご質問・お問い合わせ">伏見校スタジオ Cave</option>
+            <option value="イベントの出演依頼">栄校スタジオ Sahara</option>
+            <option value="その他">星ヶ丘校スタジオ STELLA</option>
+          </select>
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">ご希望のダンスジャンル</p>
-      </th>
-      <td class="formcontainer__col2">
-        <select name="選択してください" id="">
-          <option value="" disabled selected>選択してください</option>
-          <option value="スタジオレンタル">ラ アバナ</option>
-          <option value="レッスンに関するご質問・お問い合わせ">ケイブ</option>
-          <option value="イベントの出演依頼">サハラ</option>
-          <option value="その他">ステラ</option>
-        </select>
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">レンタル希望日</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="date" name="" id="" class="formcontainer__inputdate" placeholder="例） 0000/00/00" required>
+          <input type="date" name="" id="" placeholder="例） 0000/00/00" required>
+          <a href="" class="formcontainer__col2--text">希望日を追加</a>
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">お名前</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="text" name="" id="" placeholder="例） 山田 花子">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">ご希望のダンスジャンル</p>
+        </th>
+        <td class="formcontainer__col2">
+          <select name="選択してください" id="">
+            <option value="" disabled selected>選択してください</option>
+            <option value="スタジオレンタル">ラ アバナ</option>
+            <option value="レッスンに関するご質問・お問い合わせ">ケイブ</option>
+            <option value="イベントの出演依頼">サハラ</option>
+            <option value="その他">ステラ</option>
+          </select>
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">フリガナ</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="text" name="" id="" placeholder="例） ヤマダ ハナコ">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">お名前</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 山田 花子">
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--green">
-        <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">会社・団体名</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="text" name="" id="" placeholder="例） 株式会社サルサベリー" class="bigin">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">フリガナ</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） ヤマダ ハナコ">
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">電話番号</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="text" name="" id="" placeholder="例） 00000000000">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--green">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">会社・団体名</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 株式会社サルサベリー" class="bigin">
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--red">
-        <span class="formcontainer__ban formcontainer__ban--red">必須</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">メールアドレス</p>
-      </th>
-      <td class="formcontainer__col2">
-        <input type="text" name="" id="" placeholder="例） sample@sample.com" class="bigin">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">電話番号</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） 00000000000">
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--green">
-        <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">住所</p>
-      </th>
-      <td class="formcontainer__col2">
-        〒
-        <input type="text" name="" id="" placeholder="例） 00000000000" class="smallin smallin--mar">
-        <input type="text" name="" id="" placeholder="例） 株式会社サルサベリー" class="bigin">
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--red">
+          <span class="formcontainer__ban formcontainer__ban--red">必須</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">メールアドレス</p>
+        </th>
+        <td class="formcontainer__col2">
+          <input type="text" name="" id="" placeholder="例） sample@sample.com" class="bigin">
+        </td>
+      </tr>
 
-    <tr class="formcontainer__bor">
-      <th class="formcontainer__col1 formcontainer__col1--green">
-        <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
-        <p class="formcontainer__col1__text formcontainer__col1__text--main">仕様用途・備考</p>
-      </th>
-      <td class="formcontainer__col2">
-        <textarea name="" id="" cols="30" rows="8" placeholder="例） 〇〇について教えてください" class="bigtextarea"></textarea>
-      </td>
-    </tr>
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--green">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">住所</p>
+        </th>
+        <td class="formcontainer__col2">
+          〒
+          <input type="text" name="" id="" placeholder="例） 00000000000" class="smallin smallin--mar">
+          <input type="text" name="" id="" placeholder="例） 株式会社サルサベリー" class="bigin">
+        </td>
+      </tr>
+
+      <tr class="formcontainer__bor">
+        <th class="formcontainer__col1 formcontainer__col1--green">
+          <span class="formcontainer__ban formcontainer__ban--grey">任意</span>
+          <p class="formcontainer__col1__text formcontainer__col1__text--main">仕様用途・備考</p>
+        </th>
+        <td class="formcontainer__col2">
+          <textarea name="" id="" cols="30" rows="8" placeholder="例） 〇〇について教えてください" class="bigtextarea"></textarea>
+        </td>
+      </tr>
+    </tbody>
+    </div>
   </table>
 
   <footer class="foot">
@@ -207,7 +275,7 @@
       <label for="" class="foot__agree">
         <input type="checkbox" name="" id=""> 個人情報の取扱いに同意する
       </label>
-      <form action="/A+LIVE/TRAINING/Test04/test04_step1.html">
+      <form action="test04_step1.html" class="foot__sizebut">
         <input type="submit" class="foot__redbut" value="入力内容を確認する" />
       </form>
       <p class="foot__info">上記フォームで送信できない場合は、必要項目をご記入の上、
@@ -218,7 +286,25 @@
 
   </footer>
 
+  <div class="row">
+    Type
+    <select name="type" id="type" style="margin-left:57px; width:153px;">
+      <option name="l_letter" value="l_letter">Large Letter</option>
+      <option name="letter" value="letter">Letter</option>
+      <option name="parcel" value="parcel">Parcel</option>
+    </select>
+  </div>
 
+  <div class="row" id="row_dim">
+    Dimensions
+    <input type="text" name="length" style="margin-left:12px;" class="dimension" placeholder="Length">
+    <input type="text" name="width" class="dimension" placeholder="Width">
+    <input type="text" name="height" class="dimension" placeholder="Height">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/test04.js"></script>
 </body>
+
+
 
 </html>
