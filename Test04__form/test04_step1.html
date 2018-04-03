@@ -13,8 +13,11 @@
 
 <body>
     <header class="head">
-        <img src="images/logo_top.svg" alt="">
-        <h1 class="head__text">H1が入ります）世界中で踊れるサルサをメインとしたダンススタジオ</h1>
+        <div class="head__bg">
+            <h1 class="head__text">H1が入ります）世界中で踊れるサルサをメインとしたダンススタジオ</h1>
+        </div>
+        <img src="images/logo_top.svg" alt="Logo" class="hidesp">
+        <img src="images/logo_topsp.svg" alt="Logo SP" class="head__resizeimg hide">
     </header>
 
 
@@ -22,39 +25,16 @@
     <span class="url">&gt;</span>
     <a href="" class="url url--next">お問い合わせ</a>
     <section class="center">
-        <div class="maintitle">
-            <h1 class="">お問い合わせ</h1>
-        </div>
+        <h1 class="maintitle">お問い合わせ</h1>
     </section>
 
     <div class="blueban">
         <h2 class="blueban__title">WEBからのお問い合わせ</h2>
         <div class="container">
-            <p class="container__under">お問い合わせ内容と必要項目を入力し、
-                <span class="break">「入力内容を確認する」ボタンを押してください。</span>
-                <br>
-                <span class="container__under--red">【必須】</span>項目は必ず入力してください。
-            </p>
             <div class="container__pad">
                 <img src="images/img_steps.jpg" alt="" class="hidesp widhun">
                 <img src="images/img_stepsp.jpg" alt="" class="hide widhun">
             </div>
-            <!-- <ul>
-                <li class="container__step container__step--1">
-                    <p class="container__step__num container__step__num--1">STEP1</p>
-                    <p class="container__step__name container__step__name--1">入力</p>
-                </li>
-
-                <li class="container__step container__step--2">
-                    <p class="container__step__num container__step__num--2">STEP2</p>
-                    <p class="container__step__name container__step__name--2">確認</p>
-                </li>
-
-                <li class="container__step container__step--3">
-                    <p class="container__step__num container__step__num--3">STEP3</p>
-                    <p class="container__step__name container__step__name--3">完了</p>
-                </li>
-            </ul> -->
         </div>
     </div>
 
@@ -70,7 +50,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">ご予算</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">ご予算</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 00,000円
@@ -79,7 +59,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">ご希望のスタジオ</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">ご希望のスタジオ</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 伏見校スタジオ　La Habana
@@ -88,7 +68,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">レンタル希望日</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">レンタル希望日</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 0000/00/00 , 0000/00/00
@@ -97,7 +77,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">ご希望のダンスジャンル</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">ご希望のダンスジャンル</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 サルサ
@@ -106,7 +86,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">お名前</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">お名前</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 山田 花子
@@ -115,7 +95,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">会社・団体名</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">会社・団体名</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 〇〇株式会社
@@ -124,7 +104,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">電話番号</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">電話番号</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 00000000000
@@ -133,7 +113,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">メールアドレス</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">メールアドレス</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 sample@hermes.co.jp
@@ -142,7 +122,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">住所</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">住所</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 〒0000000　愛知県名古屋市中区〇〇
@@ -151,7 +131,7 @@
 
         <tr class="formcontainer__bor">
             <th class="formcontainer__col1 formcontainer__col1--green">
-                <p class="formcontainer__col1__text1 formcontainer__col1__text--step1">備考</p>
+                <p class="formcontainer__col1__text formcontainer__col1__text--step1">備考</p>
             </th>
             <td class="formcontainer__col2 formcontainer__col2--step1">
                 〇〇について教えてください
@@ -160,16 +140,16 @@
     </table>
 
     <div class="container link">
-        <a href="test04_home.html">◀ 内容を修正する</a>
+        <a href="test04_home.html" class="link__mar">◀ 内容を修正する</a>
     </div>
 
     <footer class="center">
-        <form action="test04_end.html">
+        <form action="test04_end.html" class="foot__sizebut">
             <input type="submit" class="foot__redbut" value="入力内容を確認する" />
         </form>
         <p class="foot__info">上記フォームで送信できない場合は、必要項目をご記入の上、
-            <span class="foot__mail">info@sample.co.jp</span>までメールをお送りください。</p>
-        <p class="foot__copyright">Copyright © 仮）名古屋でベリーダンス・サルサならエルメスダンススタジオ.All Rights Reserved.</p>
+                <span class="foot__mail">info@sample.co.jp</span>までメールをお送りください。</p>
+              <p class="foot__copyright">Copyright © 仮）名古屋でベリーダンス・サルサならエルメスダンススタジオ.All Rights Reserved.</p>
         </div>
     </footer>
 </body>

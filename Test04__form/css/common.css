@@ -80,7 +80,7 @@ tr, th, td{
 @media (max-width: 767px)
 {
   .hide{
-  display: block;
+  display: inline-block;
   }
 
   .hidesp{
