@@ -107,6 +107,9 @@
       font-size: 13px;
       margin: 2px 0 3px 0;
       letter-spacing: -0.5px; }
+    .formcontainer__col2--styletext {
+      display: inline-block;
+      cursor: pointer; }
   .formcontainer__ban {
     font-size: 13px;
     padding: 5px 12px;
@@ -173,7 +176,7 @@
       .container__step__name--3 {
         margin: 0 90px 0 80px; }
   .container__pad {
-    padding: 23px 10px 25px 0; }
+    padding: 23px 0 25px 0; }
 
 .foot {
   border-top: 2px solid #ddd;
@@ -189,11 +192,13 @@
     height: 60px;
     font-size: 18px;
     color: white;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    cursor: pointer; }
   .foot__agree {
     font-size: 16px;
     margin: 85px 0 40px 0;
-    display: block; }
+    display: block;
+    cursor: pointer; }
   .foot__info {
     font-size: 12px; }
   .foot__mail {
@@ -270,18 +275,15 @@ input {
   height: 42px;
   padding-left: 18px;
   border: 1px solid #ddd;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-size: 14px; }
 
 input[type=checkbox]:checked {
   background-color: #B51019; }
 
-input[type="date"] {
-  color: rgba(0, 0, 0, 0);
-  opacity: 1;
-  display: block;
-  background: url("../images/ico_calendar.png") no-repeat;
-  width: 20px;
-  height: 20px; }
+input[type="text"].formcontainer__inputdate {
+  background: url("../images/ico_calendar.png") no-repeat scroll calc(100% - 10px) 10px;
+  cursor: pointer; }
 
 /*Placeholder for date*/
 /*NOTE: Can use for MS*/
@@ -424,6 +426,18 @@ input[type=checkbox] {
       .formcontainer__col2--step1 {
         padding: 21px 0 21px 5px;
         font-size: 14px; }
+      .formcontainer__col2--text {
+        text-decoration: unset;
+        margin-left: 0;
+        text-align: center;
+        display: block; }
+      .formcontainer__col2--styletext {
+        width: 100%; }
+      .formcontainer__col2--borlink {
+        padding: 10px;
+        border: 1px solid #B51019; }
+      .formcontainer__col2--borlink::before {
+        content: '+  '; }
     .formcontainer__ban {
       font-size: 12px;
       padding: 5px 12px;

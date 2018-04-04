@@ -6,6 +6,10 @@ $darkgrey: #1E1E1E;
 $lightgreen: #f8f8f8;
 $grey: #f2f2f2;
 
+@mixin pointer{
+  cursor: pointer;
+}
+
 .head{
   margin: 21px 0 13px 0;
   padding-bottom:  11px;
@@ -151,6 +155,10 @@ $grey: #f2f2f2;
       margin: 2px 0 3px 0;
       letter-spacing: -0.5px;
     }
+    &--styletext{
+      display: inline-block;
+      @include pointer;
+    }
   }
   &__ban{
     font-size: 13px;
@@ -241,7 +249,7 @@ $grey: #f2f2f2;
     }
   }
   &__pad{
-    padding: 23px 10px 25px 0;
+    padding: 23px 0 25px 0;
   }
 }
 
@@ -260,12 +268,14 @@ $grey: #f2f2f2;
     height: 60px;
     font-size: 18px;
     color: white;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    @include pointer;
   }
   &__agree{
     font-size: 16px;
     margin: 85px 0 40px 0;
     display: block;
+    @include pointer;
   }
   &__info{
     font-size: 12px;
@@ -362,19 +372,16 @@ input{
   padding-left: 18px; 
   border: 1px solid $line-color;
   -webkit-appearance:none;
+  font-size: 14px;
 }
 
 input[type=checkbox]:checked {
   background-color: $red;
 }
 
-input[type="date"] {
-  color: rgba(0, 0, 0, 0);
-  opacity: 1;
-  display: block;
-  background: url("../images/ico_calendar.png") no-repeat;
-  width: 20px;
-  height: 20px;
+input[type="text"].formcontainer__inputdate {
+  background: url("../images/ico_calendar.png") no-repeat scroll calc(100% - 10px) 10px;
+  @include pointer;
 }
 
 /*Placeholder for date*/
@@ -562,6 +569,22 @@ input[type=checkbox] {
       &--step1{
         padding: 21px 0 21px 5px;
         font-size: 14px;
+      }
+      &--text{
+        text-decoration: unset;
+        margin-left: 0;
+        text-align: center;
+        display: block;
+      }
+      &--styletext{
+        width: 100%;
+      }
+      &--borlink{
+        padding: 10px;
+        border: 1px solid $red;
+      }
+      &--borlink::before{
+        content: '+  ';
       }
     }
     &__ban{

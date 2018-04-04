@@ -13,7 +13,7 @@
 
 <body>
     <header class="head1">
-        <a href="test04_home.html"><img src="images/img_header.jpg" alt="" class="widhun"></a>
+        <a href="index.php"><img src="images/img_header.jpg" alt="" class="widhun"></a>
     </header>
 
     <section class="center">
