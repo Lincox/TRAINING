@@ -1,0 +1,118 @@
+.head {
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .head__logo {
+    float: left; }
+  .head__phone {
+    margin-bottom: 39px;
+    float: right; }
+  .head__buttonsNav {
+    display: none; }
+
+.container, .headcontainer {
+  max-width: 1000px;
+  padding: 0 16px 0 15px;
+  margin: 0 auto; }
+
+.btn1 {
+  position: relative;
+  color: #fff;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  text-align: left;
+  width: 200px;
+  height: 53px;
+  font-size: 14px;
+  vertical-align: middle; }
+  .btn1--black {
+    background-color: black;
+    padding-left: 1.5%;
+    margin-left: 15px; }
+  .btn1--black:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .btn1--red {
+    background-color: #d53230;
+    padding-left: 0.65%; }
+  .btn1--red:hover {
+    background-color: rgba(207, 8, 8, 0.5); }
+
+.btn1::after {
+  position: absolute;
+  content: '';
+  background-image: url("../images/ico_arrow02.png");
+  background-repeat: no-repeat;
+  top: 18px;
+  right: 12px;
+  width: 20px;
+  height: 20px; }
+
+.menu__uptext {
+  margin-right: 38px;
+  font-size: 14px; }
+.menu__uptext:last-of-type {
+  margin-right: 0; }
+.menu__uptext:hover {
+  border-bottom: 4px solid #d53230;
+  padding-bottom: 8px; }
+
+@media (max-width: 1009px) {
+  .head__phone {
+    display: none; }
+  .head__buttonsNav {
+    width: 34.375%;
+    float: right;
+    display: inline-block; }
+
+  .btnsp {
+    color: #fff;
+    border-radius: 0;
+    font-size: 8px;
+    border: none;
+    font-weight: bold;
+    width: 50%;
+    float: left;
+    height: 74px; }
+    .btnsp--black {
+      background-color: #000;
+      position: relative;
+      padding: 27px 0 0 0; }
+    .btnsp--black::after {
+      position: absolute;
+      content: '';
+      background-image: url("../images/ico_3line.gif");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 13px;
+      top: 10px;
+      left: calc(50% - 9px); }
+    .btnsp--red {
+      background-color: #d53230;
+      position: relative;
+      padding: 20px 0 0 0; }
+    .btnsp--red::after {
+      position: absolute;
+      content: '';
+      background-image: url("../images/ico_ques.png");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 12px;
+      top: 10px;
+      left: calc(50% - 4px); }
+    .btnsp .headcontainer {
+      padding: 0 0 0 13px; }
+
+  .menu {
+    display: none; } }
+@media (max-width: 767px) {
+  .resize1 {
+    max-width: 129px; } }
+
+/*# sourceMappingURL=panethome.css.map */
