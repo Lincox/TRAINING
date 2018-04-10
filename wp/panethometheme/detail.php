@@ -1,10 +1,9 @@
-<?php include 'libs/head.php'?>
-<body>
-<?php include 'libs/header.php'?>
+
+<?php get_header(); ?>
 
 <section class="top01">
-  <img src="images/img_top01.jpg" alt="top01" class="widhun hidesp">
-  <img src="images/img_top01sp.jpg" alt="top01" class="widhun hide">
+  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/img_top01.jpg" alt="top01" class="widhun hidesp">
+  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/img_top01sp.jpg" alt="top01" class="widhun hide">
   <h1 class="top01__title">家づくりコラム</h1>
 </section>
 
@@ -21,7 +20,7 @@
     <li class="top02__col1__whole">
       <p class="top02__col1__dedate">2017/01/00</p> 
       <p class="top02__col1__detitle">完成見楽会10/14（土）15（日）21（土）22（日）</p>
-      <img src="images/img_detop02.jpg" alt="" class="widhun">
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/img_detop02.jpg" alt="" class="widhun">
       <p class="top02__col1__decontent">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
       テキストテキストテキストテキストテキストテキストテキスト
       <br>
@@ -52,11 +51,11 @@
       <a href="a" class="textlink">テキストリンクテキストリンクテキストリンク</a>
     </li>
     <li class="social">
-      <p class="social__share hidesp"><img src="images/img_detop0202.png" alt=""></p>
-      <p class="social__share hide"><img src="images/img_detop0202sp.png" alt=""></p>
-      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="images/ico_detop02fb.gif" alt="" class="resizesocial"></a></p>
-      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="images/ico_detop02tw.gif" alt="" class="resizesocial"></a></p>
-      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="images/ico_detop02line.gif" alt="" class="resizesocial"></a></p>
+      <p class="social__share hidesp"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/img_detop0202.png" alt=""></p>
+      <p class="social__share hide"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/img_detop0202sp.png" alt=""></p>
+      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ico_detop02fb.gif" alt="" class="resizesocial"></a></p>
+      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ico_detop02tw.gif" alt="" class="resizesocial"></a></p>
+      <p class="social--1"><a href="https://person-s.net/column/p9111/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ico_detop02line.gif" alt="" class="resizesocial"></a></p>
     </li>
   </ul>
 
@@ -71,64 +70,4 @@
   </div>
 </section>
 
-<section class="container center top03">
-  <img src="images/ico_detop03news.gif" alt="News">
-  <p class="top03__title">同じカテゴリーの記事</p>
-  <ul class="">
-    <li class="top03__foucol">
-      <img src="images/img_detop0301.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">2030年、私たちはどのようなクルマに乗っているのか</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0302.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">小型シャトル「ドリーム・チェイサー」、自由飛行に成功...</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0303.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">テキストテキストテキスト</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0304.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">テキストテキストテキストテキストテキストテキスト</h3>
-    </li>
-  </ul>
-</section>
-
-<section class="container center top03 top03--2">
-  <img src="images/ico_new.gif" alt="News">
-  <p class="top03__title">最新の記事</p>
-  <ul class="">
-    <li class="top03__foucol">
-      <img src="images/img_detop0401.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">2030年、私たちはどのようなクルマに乗っているのか</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0402.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">小型シャトル「ドリーム・チェイサー」、自由飛行に成功...</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0403.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">テキストテキストテキスト</h3>
-    </li>
-    <li class="top03__foucol">
-      <img src="images/img_detop0404.jpg" alt="" class="widhun">
-      <p class="top03__date">2017/01/00</p>
-      <h3 class="top03__coltitle">テキストテキストテキストテキストテキストテキスト</h3>
-    </li>
-  </ul>
-</section>
-
-<?php include 'libs/footer.php'?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-<script src="js/panethome.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

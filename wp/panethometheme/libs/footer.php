@@ -7,7 +7,7 @@
         <p class="footcontainer__title">電話でのお問い合わせ</p>
         <div class="footcontainer__btnsp">
           <p class="footcontainer__phone">
-            <img src="images/ico_phone.png" alt="Phone"> 029-263-0212
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/ico_phone.png" alt="Phone"> 029-263-0212
           </p>
           <p class="footcontainer__time">電話受付９:00〜18:00 水曜定休</p>
           <p class="footcontainer__blacksp">タップして電話をかけることができます</p>
@@ -25,7 +25,7 @@
 <footer class="footcontainer footcontainer--2">
     <ul class="clearfix hidesp">
       <li class="footcontainer__thrcol footcontainer__thrcol--1">
-        <img src="images/logohead.jpg" alt="">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logohead.jpg" alt="">
         <p>パネットホーム
           <br>株式会社八文字建設</p>
         <p>茨城県ひたちなか市田中後７－４</p>

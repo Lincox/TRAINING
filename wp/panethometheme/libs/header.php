@@ -1,13 +1,13 @@
-<header class="head">
+<header class="head" style="position:static">
   <div class="clearfix headcontainer">
     <div class="head__logo">
       <a href="a">
-        <img src="images/logohead.jpg" alt="Logo" class="resize1">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logohead.jpg" alt="Logo" class="resize1">
       </a>
     </div>
     <div class="head__phone">
       <a href="a">
-        <img src="images/phoneNum.png" alt="Phone" class="middle">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/phoneNum.png" alt="Phone" class="middle">
       </a>
       <button class="btn1 btn1--black" type="button">見学会・イベント予約</button>
       <button class="btn1 btn1--red" type="button">お問い合わせ・資料請求</button>
@@ -24,7 +24,7 @@
     <a href="a" class="menu__uptext">見学会・イベント情報</a>
     <a href="a" class="menu__uptext">会社概要・代表挨拶</a>
     <a href="a" class="menu__uptext">お客様インタビュー</a>
-    <a href="a" class="menu__uptext">家づくりコラム</a>
+    <a href="blog" class="menu__uptext">家づくりコラム</a>
   </div>
 
   <ul class="clearfix container none" id="menu">
