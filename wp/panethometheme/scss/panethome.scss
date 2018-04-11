@@ -1,9 +1,17 @@
 $grey: #f1f1f1;
-$yugothic: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$yugothic: "游ゴシック体",
+"Yu Gothic",
+YuGothic,
+"Hiragino Kaku Gothic Pro",
+Osaka,
+メイリオ,
+Meiryo,
+"ＭＳ Ｐゴシック",
+"MS PGothic",
+sans-serif;
 $rob: "Roboto Condensed";
 $greytext: #808080;
 $red: #d53230;
-
 //Header and footer css
 .head {
     position: fixed;
@@ -13,22 +21,20 @@ $red: #d53230;
     background-color: #fff;
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
     &__logo {
         float: left;
     }
-
     &__phone {
         margin-bottom: 39px;
         float: right;
     }
-
     &__buttonsNav {
         display: none;
     }
 }
 
-.container, .headcontainer {
+.container,
+.headcontainer {
     max-width: 1000px;
     padding: 0 15px;
     margin: 0 auto;
@@ -47,33 +53,27 @@ $red: #d53230;
     height: 53px;
     font-size: 14px;
     vertical-align: middle;
-
     &--black {
         background-color: black;
         padding-left: 1.5%;
         margin-left: 15px;
     }
-
     &--black:hover {
         background-color: rgba(0, 0, 0, 0.5);
     }
-
     &--red {
         background-color: #d53230;
         padding-left: 0.65%;
     }
-
     &--red:hover {
         background-color: rgba(207, 8, 8, 0.5);
     }
-
     &--foot {
         width: 242px;
         height: 64px;
         font-size: 16px;
         font-weight: bold;
     }
-
     &--foot::after {
         position: absolute;
         content: '';
@@ -84,12 +84,10 @@ $red: #d53230;
         width: 18px;
         height: 18px;
     }
-
     &--blkfoot {
         padding-left: 40px;
         margin-left: 10px;
     }
-
     &--redfoot {
         padding-left: 10px;
         margin: 0;
@@ -112,12 +110,11 @@ $red: #d53230;
         margin-right: 38px;
         font-size: 14px;
     }
-
     &__uptext:last-of-type {
         margin-right: 0;
     }
-
-    &__uptext:hover, &__uptext:focus {
+    &__uptext:hover,
+    &__uptext:focus {
         border-bottom: 4px solid #d53230;
         padding-bottom: 8px;
     }
@@ -126,43 +123,35 @@ $red: #d53230;
 .footcontainer {
     max-width: 1000px;
     margin: 0 auto;
-
     &--1 {
         padding: 0 17.5px;
     }
-
     &--2 {
         padding: 0 10px;
     }
-
     &__thrcol {
         width: 33.3333333333%;
         float: left;
         margin-top: 80px;
-
         &--1 {
             font-size: 14px;
         }
-
         &--1:nth-child(2) {
             font-size: 18px;
             font-weight: bold;
         }
     }
-
     &__col1 {
         width: 40%;
         float: left;
         background-color: #fff;
     }
-
     &__title {
         font-size: 20px;
         font-weight: bold;
         padding: 42px 0 20px 0;
         margin: 0;
     }
-
     &__phone {
         font-size: 36px;
         font-family: 'Roboto Condensed';
@@ -170,13 +159,11 @@ $red: #d53230;
         padding: 0 0 16px 0;
         margin: 0;
     }
-
     &__time {
         font-size: 14px;
         padding: 0 0 48px 0;
         margin: 0;
     }
-
     &__col2 {
         width: calc(60% - 9px);
         float: left;
@@ -184,11 +171,9 @@ $red: #d53230;
         margin-left: 9px;
         margin-bottom: 60px;
     }
-
     &__btn {
         padding: 0 0 63px 0;
     }
-
     &__blacksp {
         display: none;
     }
@@ -217,14 +202,12 @@ $red: #d53230;
 .menuarr {
     position: relative;
     font-size: 12px;
-
     &__rig {
         border-bottom: 1px dotted black;
         margin: 16px 0 0 0;
         border-bottom: 1px dotted black;
         padding: 0 0 16px 0;
     }
-
     &__rig::after {
         content: '';
         position: absolute;
@@ -234,12 +217,10 @@ $red: #d53230;
         height: 6px;
         right: 0;
     }
-
     &__lef {
         font-size: 14px;
         margin-left: 20px;
     }
-
     &__lef::before {
         content: '';
         position: absolute;
@@ -256,7 +237,7 @@ $red: #d53230;
     font-size: 12px;
 }
 
-.close{
+.close {
     margin-top: 17px;
     font-size: 16px;
     position: relative;
@@ -266,21 +247,20 @@ $red: #d53230;
     padding: 8px 0 7px 0;
 }
 
-.close::before{
-    content:'';
+.close::before {
+    content: '';
     position: absolute;
     background: url("../images/ico_close.gif") no-repeat;
     width: 13px;
     height: 13px;
     top: calc(50% - 8px);
-    left: calc(50% - 48px); 
+    left: calc(50% - 48px);
 }
 
 //body css
 .top01 {
     padding-top: 166px;
     position: relative;
-
     &__title {
         position: absolute;
         font-size: 28px;
@@ -302,23 +282,19 @@ $red: #d53230;
         text-decoration: underline;
         font-size: 12px;
     }
-
     &__gt {
         font-size: 12px;
         display: inline-block;
     }
-
     &__link2 {
         font-size: 12px;
         margin-left: 10px;
     }
-
     &__col1 {
         width: calc(80% - 50px);
         float: left;
         font-size: 0;
         margin-right: 50px;
-
         &__1 {
             width: 12.5%;
             display: inline-block;
@@ -326,7 +302,6 @@ $red: #d53230;
             padding-bottom: 20px;
             padding-top: 20px;
         }
-
         &__2 {
             width: 87.5%;
             display: inline-block;
@@ -336,17 +311,14 @@ $red: #d53230;
             padding-bottom: 20px;
             padding-top: 20px;
         }
-
         &--bor {
             border-bottom: 1px dotted black;
         }
-
         &__date {
             font-size: 14px;
             color: $greytext;
             margin: 0 0 0 22px;
         }
-
         &__title {
             font-size: 18px;
             margin: 0 0 0 22px;
@@ -357,36 +329,28 @@ $red: #d53230;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
-        &__dedate{
+        &__dedate {
             font-size: 14px;
             color: $greytext;
             margin: 0 0 9px 0;
         }
-
-        &__detitle{
+        &__detitle {
             font-size: 26px;
             font-weight: bold;
             margin: 0 0 40px 0;
         }
-
-        &__decontent{
+        &__decontent {
             font-size: 16px;
             margin: 38px 0 0 0;
         }
-
-        &__decontent img{
+        &__decontent img {
             max-width: 100%;
         }
-
-     
-
-        &__whole{
+        &__whole {
             margin-bottom: 96px;
             margin-top: 64px;
         }
-
-        &__whole h2{
+        &__whole h2 {
             font-size: 22px;
             font-weight: bold;
             border-left: 3px solid black;
@@ -394,28 +358,24 @@ $red: #d53230;
             margin-top: 100px;
             margin-bottom: 20px;
         }
-
-        &__whole h3{
+        &__whole h3 {
             font-size: 20px;
             font-weight: bold;
             margin-top: 80px;
             margin-bottom: 20px;
         }
     }
-
     &__col2 {
         width: 20%;
         float: right;
         background-color: $grey;
         font-size: 16px;
         margin-top: 64px;
-
         &__title {
             padding: 27px 0 0 0;
             margin: 0 0 0 24px;
         }
-
-        &__li {
+        &__li, &--datearc li {
             padding: 10px 0 0 20px;
             margin: 0 0 0 24px;
             text-decoration: underline;
@@ -423,11 +383,9 @@ $red: #d53230;
             font-size: 14px;
             line-height: 1.3;
         }
-
         &__li:last-of-type {
             padding: 10px 0 33px 20px;
         }
-
         &__li::before {
             content: '';
             position: absolute;
@@ -437,6 +395,17 @@ $red: #d53230;
             left: 0;
             top: 18px;
         }
+
+        &--datearc:last-child{
+            padding: 0 0 33px 0;
+        }
+        &--datearc:first-child{
+            padding: 33px 0 0 0;
+        }
+    }
+
+    &__col2 li{
+        font-size: 14px;
     }
 }
 
@@ -449,7 +418,6 @@ $red: #d53230;
     margin: 0;
     padding: 0;
     text-align: left;
-
     &--2 {
         margin: 0 0 0 22px;
         color: $greytext;
@@ -468,40 +436,35 @@ $red: #d53230;
     text-align: right;
 }
 
-.pagination {
-    display: inline-block;
-    margin-top: 145px;
-}
-
-.pagination a {
-    color: black;
-    float: left;
-    padding: 11px 16px;
-    text-decoration: none;
-    background-color: $grey;
-    border: none;
-    font-size: 16px;
-    font-family: $rob;
-}
-
-.pagination button {
-    float: left;
-    width: 40px;
-    height: 40px;
-    background: black;
-}
-
-.pagination a.active {
-    background-color: $greytext;
-    color: white;
-    border: none;
-}
-
-.pagination a:hover:not(.active), .pagination button:hover {
-    background-color: $greytext;
-    color: white;
-}
-
+// .pagination {
+//     display: inline-block;
+//     margin-top: 145px;
+// }
+// .pagination a,.pagination span  {
+//     color: black;
+//     float: left;
+//     padding: 11px 16px;
+//     text-decoration: none;
+//     background-color: $grey;
+//     border: none;
+//     font-size: 16px;
+//     font-family: $rob;
+// }
+// .pagination button {
+//     float: left;
+//     width: 40px;
+//     height: 40px;
+//     background: black;
+// }
+// .pagination a.active {
+//     background-color: $greytext;
+//     color: white;
+//     border: none;
+// }
+// .pagination a:hover:not(.active), .pagination button:hover {
+//     background-color: $greytext;
+//     color: white;
+// }
 .paging {
     font-size: 12px;
     font-family: $rob;
@@ -510,7 +473,7 @@ $red: #d53230;
     text-align: center;
 }
 
-.heading1{
+.heading1 {
     font-size: 22px;
     font-weight: bold;
     border-left: 3px solid black;
@@ -518,23 +481,23 @@ $red: #d53230;
     margin-top: 100px;
 }
 
-.heading2{
+.heading2 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 80px;
 }
 
-.disc{
+.disc {
     list-style-type: disc;
     list-style-position: inside;
     margin-top: 55px;
 }
 
-.disc li{
+.disc li {
     font-size: 16px;
 }
 
-.textlink{
+.textlink {
     font-size: 16px;
     text-decoration: underline;
     color: $red;
@@ -542,13 +505,13 @@ $red: #d53230;
     margin-top: 43px;
 }
 
-.social{
-    &__share{
+.social {
+    &__share {
         position: relative;
         display: inline-block;
         margin-right: 28px;
     }
-    &__share::after{
+    &__share::after {
         position: absolute;
         content: "この記事をシェア";
         font-weight: bold;
@@ -556,38 +519,38 @@ $red: #d53230;
         top: calc(50% - 10px);
         left: calc(50% - 56px);
     }
-    &--1{
+    &--1 {
         display: inline-block;
         margin-right: 20px;
     }
-    &--1:last-of-type{
+    &--1:last-of-type {
         margin-right: 0;
     }
 }
 
-.top03{
-    &__title{
+.top03 {
+    &__title {
         font-size: 20px;
         font-weight: bold;
         display: inline-block;
         margin-left: 12px;
     }
-    &__foucol{
+    &__foucol {
         width: 24%;
         display: inline-block;
         margin-right: 1%;
         vertical-align: top;
     }
-    &__foucol:last-child{
+    &__foucol:last-child {
         margin-right: 0;
     }
-    &__date{
+    &__date {
         font-size: 14px;
         text-align: left;
         margin-left: 10px;
         margin-top: 17px;
     }
-    &__coltitle{
+    &__coltitle {
         font-size: 16px;
         text-align: left;
         margin-left: 10px;
@@ -598,32 +561,142 @@ $red: #d53230;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-    &--2{
+    &--2 {
         margin-top: 90px;
         margin-bottom: 170px;
     }
 }
+
+//Styling pagenavi wordpress
+.wp-pagenavi {
+    padding: 10px 20px 10px;
+    display: block;
+    clear: both;
+    margin-bottom: 78px;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+.wp-pagenavi span.extend,
+.wp-pagenavi a:active {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi a:link,
+.wp-pagenavi span.current,
+.wp-pagenavi span.extend {
+    color: black;
+    padding: 11px 16px;
+    text-decoration: none;
+    background-color: $grey;
+    border: none;
+    font-size: 16px;
+    font-family: $rob;
+    border-radius: 0 !important;
+}
+
+.wp-pagenavi a:active {
+    background-color: $greytext;
+    color: white;
+    border: none;
+}
+
+.wp-pagenavi a:hover:not(.active) {
+    background-color: $greytext;
+    color: white;
+}
+
+.wp-pagenavi a.previouspostslink,
+,
+.wp-pagenavi a.nextpostslink {
+    color: white;
+    padding: 11px 12px;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    font-family: $rob;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.wp-pagenavi a.previouspostslink::before {
+    content: '';
+    background: url("../images/ico_page01.gif");
+    max-width: 20px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: absolute;
+}
+
+.wp-pagenavi span.pages {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prepost,
+.nextpost {
+    display: inline-block;
+    width: calc(50% - 75px);
+    margin-top: 50px;
+    position: relative;
+}
+
+.prepost {
+    margin-right: 50px;
+    padding-left: 50px;
+}
+
+.prepost::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 28px;
+    top: 30%;
+    left: 0;
+    background: url("../images/ico_prev.svg") no-repeat;
+}
+
+.nextpost {
+    padding-right: 50px;
+}
+
+.nextpost::after {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 28px;
+    top: 30%;
+    right: 0;
+    background: url("../images/ico_next.svg") no-repeat;
+}
+
 @media (max-width: 1009px) {
     //header and footer css
     .head {
         padding: 0;
-
         &__phone {
             display: none;
         }
-
         &__buttonsNav {
             width: 34.375%;
             float: right;
             display: inline-block;
         }
     }
-
     .resize1 {
         vertical-align: bottom;
     }
-
     .btnsp {
         color: #fff;
         border-radius: 0;
@@ -633,13 +706,11 @@ $red: #d53230;
         width: 50%;
         float: left;
         height: 74px;
-
         &--black {
             background-color: #000;
             position: relative;
             padding: 27px 0 0 0;
         }
-
         &--black::after {
             position: absolute;
             content: '';
@@ -650,13 +721,11 @@ $red: #d53230;
             top: 10px;
             left: calc(50% - 9px);
         }
-
         &--red {
             background-color: #d53230;
             position: relative;
             padding: 20px 0 0 0;
         }
-
         &--red::after {
             position: absolute;
             content: '';
@@ -668,22 +737,16 @@ $red: #d53230;
             left: calc(50% - 4px);
         }
     }
-
     .headcontainer {
         padding: 0 0 0 13px;
     }
-
     .menu {
         display: none;
-    }
-
-    //body css
+    } //body css
     .top01 {
         padding-top: 74px;
-
         &__title {
             top: calc(68.6868687% - 22px); //100% = 124px + 74px; (74 + 124/2)/(74 + 124) = 68.6868687%
-       
         }
     }
 }
@@ -693,16 +756,13 @@ $red: #d53230;
         font-size: 19px;
         padding: 34px 0 6px 0;
     }
-
     .footscript {
         font-size: 13px;
         padding: 0 0 60px 0;
     }
-
     .footscript br {
         display: block;
     }
-
     .footcontainer {
         &__blackSP {
             font-size: 12px;
@@ -713,23 +773,19 @@ $red: #d53230;
             padding: 0;
             margin: 0;
         }
-
         &__title {
             font-size: 16px;
             padding: 27px 0 13px 0;
         }
-
         &__phone {
             font-size: 26px;
             padding: 16px 0 9px 0;
             line-height: 0;
         }
-
         &__time {
             font-size: 12px;
             padding: 0 0 16px 0;
         }
-
         &__blacksp {
             font-size: 12px;
             line-height: 30px;
@@ -739,26 +795,22 @@ $red: #d53230;
             padding: 0;
             margin: 0;
         }
-
-        &__col1, &__col2 {
+        &__col1,
+        &__col2 {
             width: 100%;
             margin: 0;
         }
-
         &__col1 {
             margin-bottom: 10px;
         }
-
         &__col2 {
             margin-bottom: 47px;
         }
-
         &__btnsp {
             border: 1px solid #000;
             margin: 0 16px 25px 16px;
             position: relative;
         }
-
         &__btnsp::after {
             position: absolute;
             background-image: url("../images/ico_arrcircle.gif");
@@ -770,19 +822,17 @@ $red: #d53230;
             height: 22px;
         }
     }
-
     .btn1 {
         &--foot {
-            width: 260px;
+            max-width: 260px;
+            width: 100%;
             height: 60px;
             font-size: 15px;
         }
-
         &--redfoot {
             padding-left: 42px;
             margin-bottom: 16px;
         }
-
         &--blkfoot {
             padding-left: 55px;
             margin: 0 0 16px 0;
@@ -794,31 +844,29 @@ $red: #d53230;
     //header and footer css
     .resize1 {
         max-width: 129px;
+        width: 100%;
         vertical-align: bottom;
     }
-
     .btnsp {
         height: 50px;
     }
-
     .twocol {
         width: calc(50% - 12px);
         float: left;
-
         &--mar {
             margin: 0 22.5px 0 0;
         }
-
         &--mar .menuarr__lef::before {
             top: 20px;
         }
-
-        &--mar:nth-child(2), &--mar:nth-child(4), &--mar:nth-child(6), &--mar:nth-child(8) {
+        &--mar:nth-child(2),
+        &--mar:nth-child(4),
+        &--mar:nth-child(6),
+        &--mar:nth-child(8) {
             margin: 0 0 0 0;
             float: right;
         }
     }
-
     .menuarr {
         &__lef {
             font-size: 12px;
@@ -827,40 +875,31 @@ $red: #d53230;
             margin: 16px 0 0 0;
             letter-spacing: -0.5px;
         }
-
         &__lef::before {
             top: 6px;
         }
     }
-
     .copyright {
         margin-top: 33px;
         text-align: center;
-    }
-
-    //body css
+    } //body css
     .top01 {
         padding-top: 50px;
-
         &__title {
             font-size: 19px;
             top: calc(72.7272727% - 16px); //100% = 60px + 50px; (50 + 60/2)/(50 + 60) = 72.7272727%
-       
         }
     }
-
     .top02 {
         &__col1 {
             width: 100%;
             margin: 0;
             float: none;
-
             &__1 {
                 width: 31.25%;
                 padding-bottom: 20px;
                 padding-top: 20px;
             }
-
             &__2 {
                 width: 68.75%;
                 font-size: 11px;
@@ -868,12 +907,10 @@ $red: #d53230;
                 padding-bottom: 20px;
                 padding-top: 20px;
             }
-
             &__date {
                 font-size: 11px;
                 margin: 0 0 0 22px;
             }
-
             &__title {
                 font-size: 14px;
                 margin: 0 0 0 22px;
@@ -884,39 +921,32 @@ $red: #d53230;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-
-            &__dedate{
+            &__dedate {
                 font-size: 11px;
                 margin: 0 0 15px 0;
             }
-    
-            &__detitle{
+            &__detitle {
                 font-size: 17px;
                 margin: 0 0 25px 0;
             }
-    
-            &__decontent{
+            &__decontent {
                 font-size: 13px;
                 margin: 22px 0 0 0;
             }
-    
-            &__whole{
+            &__whole {
                 margin-bottom: 65px;
                 margin-top: 33px;
             }
-
-            &__whole h2{
+            &__whole h2 {
                 font-size: 15px;
                 padding-left: 20px;
                 margin-top: 50px;
             }
-
-            &__whole h3{
+            &__whole h3 {
                 font-size: 14px;
                 margin-top: 50px;
             }
         }
-
         &__col2 {
             width: 100%;
             float: none;
@@ -924,11 +954,9 @@ $red: #d53230;
             font-size: 10px;
             border: 1px solid black;
             margin-top: -1px;
-
             &__title {
                 display: none;
             }
-
             &__li {
                 padding: 16px 0 0 0;
                 margin: 0 18px;
@@ -936,16 +964,13 @@ $red: #d53230;
                 position: relative;
                 border-bottom: 1px dotted black;
             }
-
             &__li:nth-of-type(2) {
                 margin-top: 9px;
             }
-
             &__li:last-of-type {
                 padding: 16px 0 0 0;
                 margin-bottom: 25px;
             }
-
             &__li::after {
                 right: 0;
                 content: '';
@@ -956,40 +981,32 @@ $red: #d53230;
                 right: 0;
                 top: 22px;
             }
-
             &__li::before {
                 display: none;
             }
         }
     }
-
     .btnsm::after {
         left: 0;
         text-align: left;
     }
-
     .pagination {
         margin-top: 54px;
     }
-
     .pagination a {
         padding: 11px 11.5px;
     }
-
     .pagination button {
         background: $greytext;
     }
-
     .paging {
         margin-top: 17px;
         margin-bottom: 37px;
     }
-
     .right {
         text-align: center !important;
         margin: 0 -15px;
     }
-
     #showmenu1 {
         font-size: 13px;
         background-color: white;
@@ -1000,7 +1017,6 @@ $red: #d53230;
         padding: 10px 0 10px 37px;
         position: relative;
     }
-
     #showmenu1::before {
         position: absolute;
         content: '';
@@ -1011,45 +1027,36 @@ $red: #d53230;
         top: 0;
         left: 0;
     }
-
     #menu1 {
         display: none;
     }
-
-
-    .heading1{
+    .heading1 {
         font-size: 15px;
         padding-left: 20px;
         margin-top: 50px;
     }
-    
-    .heading2{
+    .heading2 {
         font-size: 14px;
         margin-top: 50px;
     }
-    
-    .disc{
+    .disc {
         margin-top: 40px;
     }
-    
-    .disc li{
+    .disc li {
         font-size: 13px;
     }
-    
-    .textlink{
+    .textlink {
         font-size: 13px;
         margin-top: 33px;
     }
-    
-    .social{
+    .social {
         background-color: $grey;
         text-align: center;
         margin: 0 -15px 30px -15px;
-        
-        &__share{
+        &__share {
             margin-right: 11px;
         }
-        &__share::after{
+        &__share::after {
             position: absolute;
             content: "この記事をシェア";
             font-weight: bold;
@@ -1057,39 +1064,36 @@ $red: #d53230;
             top: calc(50% - 10px);
             left: calc(50% - 56px);
         }
-
-        &--1{
+        &--1 {
             margin: 20px 11px 22px 0;
         }
     }
-
-    .resizesocial{
+    .resizesocial {
         max-width: 41px;
     }
-
-    .top03{
-        &__title{
+    .top03 {
+        &__title {
             font-size: 20px;
             font-weight: bold;
             display: inline-block;
             margin-left: 12px;
         }
-        &__foucol{
+        &__foucol {
             width: calc(50% - 8px);
             display: inline-block;
             margin: 0 4px;
             vertical-align: top;
         }
-        &__foucol:last-child{
+        &__foucol:last-child {
             margin-right: 0;
         }
-        &__date{
+        &__date {
             font-size: 14px;
             text-align: left;
             margin-left: 10px;
             margin-top: 17px;
         }
-        &__coltitle{
+        &__coltitle {
             font-size: 16px;
             text-align: left;
             margin-left: 10px;
@@ -1100,8 +1104,7 @@ $red: #d53230;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-    
-        &--2{
+        &--2 {
             margin-top: 90px;
             margin-bottom: 170px;
         }

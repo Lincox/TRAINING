@@ -1,4 +1,4 @@
-<header class="head" style="position:static">
+<header class="head">
   <div class="clearfix headcontainer">
     <div class="head__logo">
       <a href="a">
