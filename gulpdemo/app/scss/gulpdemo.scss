@@ -1,0 +1,70 @@
+.testing {
+    width: percentage(5 / 7);
+}
+
+.colorr {
+    background: blue;
+}
+
+.parent {
+  width: 45%;
+  margin: 20px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background: url("../images/a.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.parent:hover .child, .parent:focus .child {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+  display: block;
+  opacity: 0.7;
+}
+
+.parent:hover a, .parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: block;
+opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52,73,94,0.75);
+    -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.parallax{
+  background: url("../images/a.png") center no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  background-size: cover;
+}
