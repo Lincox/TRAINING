@@ -1,0 +1,753 @@
+$grey0: #333;
+$grey1: #666;
+$grey2: #999;
+$grey3: #f4f4f4;
+$keycolor: #f7b733;
+
+@mixin opa($x) {
+    @include aft(100%, 100%);
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, $x);
+    z-index: 0;
+}
+
+@mixin bg {
+    background-attachment: fixed;
+}
+
+@mixin aft($a, $b) {
+    content: '';
+    position: absolute;
+    width: $a;
+    height: $b;
+}
+
+@mixin forbor {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+//for after
+@mixin borkey($x) {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: $keycolor;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - #{$x});
+}
+
+//for before
+@mixin borbot($a, $b) {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba($a, $a, $a, $b);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin trans {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+@mixin btn($a, $b) {
+    color: $a;
+    border: 1px solid $b;
+    background: $b;
+}
+
+@mixin top {
+    font-size: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@mixin topsp {
+    font-size: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.top01 {
+    background: url("../images/pic_01.jpg") center no-repeat;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+
+    &__title {
+        position: absolute;
+        vertical-align: middle;
+        width: 100%;
+        text-align: center;
+        top: calc(50% - 77px);
+    }
+
+    &__title span {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+    }
+
+    &__name {
+        font-size: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    &--wrap {
+        margin-top: 50px;
+    }
+
+    &__more {
+        padding: 10px 30px;
+        font-size: 14px;
+        border: 1px solid $keycolor;
+        background: transparent;
+        color: $keycolor;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__more:hover {
+        border: 1px solid $keycolor;
+        background: $keycolor;
+        color: white;
+
+        @include trans;
+    }
+}
+
+.top01::before {
+    @include opa(0.8);
+}
+
+.top02 {
+    @include top;
+
+    &__col1 {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 50px;
+    }
+
+    &__col2 {
+        width: calc(60% - 50px);
+        display: inline-block;
+        vertical-align: top;
+        text-align: justify;
+
+        &__hello {
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        &__about {
+            font-size: 30px;
+            color: $grey0;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+
+            @include forbor;
+        }
+
+        &__about::after {
+            @include borkey(50%);
+        }
+
+        &__about::before {
+            @include borbot(1, 0.05);
+        }
+
+        &__content {
+            font-size: 16px;
+            color: $grey1;
+        }
+    }
+
+    &__btn {
+        margin-top: 50px;
+    }
+}
+
+.square {
+    font-size: 15px;
+    color: $grey0;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.square i {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+}
+
+.square i.fa-facebook {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 4px);
+}
+
+.square:hover {
+    color: white;
+    background-color: $keycolor;
+    border: 1px solid $keycolor;
+
+    @include trans;
+}
+
+.square:hover i {
+    color: white;
+}
+
+.title {
+    font-size: 36px;
+    color: $grey0;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
+    @include forbor;
+
+    &--white {
+        color: white;
+    }
+
+    &--white::before {
+        background: rgba(255, 255, 255, 0.2) !important;
+    }
+}
+
+.title::after {
+    @include borkey(30px);
+}
+
+.title::before {
+    @include borbot(1, 0.05);
+}
+
+.top03 {
+    @include top;
+
+    background-color: $grey3;
+    text-align: center;
+}
+
+.fourcol {
+    width: 23.5%;
+    background: white;
+    text-align: center;
+    margin-right: 2%;
+    display: inline-block;
+    border-bottom: 5px solid $grey0;
+
+    &--pad {
+        margin-top: 50px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    &__content {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+}
+
+.fourcol:last-child {
+    margin-right: 0;
+}
+
+.fourcol:hover {
+    background: $grey0;
+    color: white;
+
+    @include trans;
+
+    &__title {
+        color: white;
+    }
+
+    &__content {
+        color: white;
+    }
+
+    .circle {
+        color: $grey0;
+        font-size: 16px;
+        background-color: white;
+    }
+}
+
+.circle {
+    font-size: 16px;
+    color: white;
+    background-color: $grey0;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.circle i {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+}
+
+.top04 {
+    @include top;
+
+    text-align: center;
+
+    .twocol {
+        width: calc(50% - 21px);
+        display: inline-block;
+        font-size: 20px;
+
+        &--right {
+            float: right;
+            border-left: 2px solid $grey2;
+            padding-left: 20px;
+            position: relative;
+            text-align: left;
+        }
+
+        &--right::before {
+            left: -5px;
+        }
+
+        &--left:first-of-type::after {
+            top: 30px;
+        }
+
+        &--left {
+            float: left;
+            border-right: 2px solid $grey2;
+            padding-right: 20px;
+            position: relative;
+            text-align: right;
+        }
+
+        &--left:first-of-type {
+            padding-top: 30px;
+        }
+
+        &--left::after, &--right::before {
+            @include aft(8px, 8px);
+
+            background-color: $keycolor;
+            border-radius: 8px;
+            top: 8px;
+        }
+
+        &--left::after {
+            right: -5px;
+        }
+
+        &--left:first-of-type::after {
+            top: 38px;
+        }
+
+        &__name {
+            color: $grey0;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        &__name:hover {
+            color: $keycolor;
+
+            @include trans;
+        }
+
+        &__date {
+            color: $grey2;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        &__team {
+            color: $grey2;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        &__team span {
+            font-weight: bold;
+        }
+
+        &__des {
+            color: $grey1;
+            font-size: 16px;
+        }
+    }
+}
+
+.top05 {
+    background: url("../images/pic_03.jpg") no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 0;
+
+    @include top;
+}
+
+.top06 {
+    background: url("../images/pic_contact.jpg") no-repeat fixed;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: relative;
+
+    @include top;
+
+    .twocol {
+        width: 50%;
+        float: left;
+    }
+
+    &__inp {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 13px;
+        width: calc(100% - 40px);
+        font-size: 15px;
+        background-color: rgba(1, 1, 1, 0.3);
+        color: white;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        z-index: 1;
+    }
+
+    &__mar {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__mar:first-child, &__mar:nth-child(2) {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 8px;
+    }
+
+    &__contact {
+        margin-top: 50px;
+    }
+}
+
+.top06::before {
+    @include opa(0.8);
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    &--1 {
+        margin-top: 50px !important;
+    }
+}
+
+.btn::before {
+    content: '';
+}
+
+.btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+
+    &--key {
+        @include btn(white, $keycolor);
+    }
+
+    &--key:hover {
+        @include btn($keycolor, transparent);
+
+        border: 1px solid $keycolor;
+
+        @include trans;
+    }
+
+    &--white {
+        @include btn($keycolor, transparent);
+
+        border: 1px solid $keycolor;
+    }
+
+    &--white:hover {
+        @include btn(white, $keycolor);
+        @include trans;
+    }
+}
+
+.threecol {
+    width: calc(33.3333333333333% - 8px);
+    display: inline-block;
+    vertical-align: top;
+
+    &--1 {
+        font-size: 16px;
+        color: white;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+        font-weight: 100;
+        margin-left: 8px;
+    }
+
+    &--1 a:hover {
+        color: $keycolor;
+
+        @include trans;
+    }
+}
+
+.threecol i {
+    font-size: 30px;
+    color: $keycolor;
+}
+
+.icon {
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .top01 {
+        background-attachment: scroll;
+
+        &__title span {
+            font-size: 16px;
+        }
+
+        &__name {
+            font-size: 30px;
+        }
+
+        &--wrap {
+            margin-top: 40px;
+        }
+    }
+
+    .top02 {
+        @include topsp;
+
+        &__col1, &__col2 {
+            width: 100%;
+        }
+
+        &__col1 {
+            margin-right: 0px;
+        }
+
+        &__col2 {
+            margin-top: 30px;
+            text-align: center;
+
+            &__content {
+                font-size: 14px;
+                text-align: justify;
+            }
+        }
+
+        &__btn {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .top03 {
+        @include topsp;
+
+        background-color: $grey3;
+        text-align: center;
+    }
+
+    .fourcol {
+        width: 49%;
+        margin-right: 2%;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__content {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+    }
+
+    .fourcol:last-child, .fourcol:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .fourcol:nth-child(3), .fourcol:nth-child(4) {
+        margin-top: 20px;
+    }
+
+    .fourcol:hover {
+        .circle {
+            font-size: 13px;
+        }
+    }
+
+    .circle {
+        font-size: 13px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle i {
+        top: calc(50% - 7px);
+    }
+
+    .top04 {
+        @include topsp;
+
+        .twocol {
+            width: calc(100% - 21px);
+            display: inline-block;
+            font-size: 20px;
+
+            &--right, &--left {
+                float: none;
+                text-align: left;
+                padding-left: 20px;
+                border-left: 2px solid $grey2;
+                padding-top: 6px;
+                text-align: justify;
+            }
+
+            &--right::before {
+                left: -5px;
+            }
+
+            &--left:first-of-type::after {
+                left: -5px;
+            }
+
+            &--left::after {
+                left: -5px;
+            }
+
+            &--left {
+                border-right: none;
+                padding-right: 0px;
+            }
+
+            &--left:first-of-type {
+                padding-top: 6px;
+            }
+
+            &--left:first-of-type::after {
+                top: 20px;
+            }
+
+            &__name {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            &__date {
+                font-size: 12px;
+            }
+
+            &__team {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            &__des {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .top06 {
+        background-attachment: scroll;
+
+        @include topsp;
+
+        .twocol {
+            width: 100%;
+        }
+
+        &__inp {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 13px;
+            width: calc(100% - 40px);
+            font-size: 15px;
+            background-color: rgba(1, 1, 1, 0.3);
+            color: white;
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+            z-index: 1;
+        }
+
+        &__mar {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__mar:first-child, &__mar:nth-child(2) {
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .threecol {
+        width: 100%;
+
+        &--1 {
+            font-size: 13px;
+        }
+    }
+
+    .threecol i {
+        font-size: 20px;
+    }
+}
