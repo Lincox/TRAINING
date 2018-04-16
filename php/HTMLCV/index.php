@@ -178,24 +178,27 @@
 
     <section class="top06">
         <h2 class="title title--white">Hiring me</h2>
-        <form method="post" action="contactform.php">
+        <form method="POST" action="contactform.php">
             <ul class="container container--1 clearfix">
                 <li class="twocol top06__mar">
-                    <input type="text" name="name" id="name" placeholder="Name (or Company)&#42;" class="top06__inp top06__inp--left">
+                    <input type="text" name="name" id="name" placeholder="Name (or Company)&#42;" class="top06__inp top06__inp--left" required>
                 </li>
                 <li class="twocol top06__mar">
-                    <input type="text" name="mail" id="mail" placeholder="Email &#42;" class="top06__inp top06__inp--right">
+                    <input type="email" name="mail" id="mail" placeholder="Email &#42;" class="top06__inp top06__inp--right" required>
                 </li>
                 <li class=" top06__mar">
                     <input type="text" name="subject" id="subject" placeholder="Subject" class="top06__inp">
                 </li>
-                <li class=" top06__mar">
-                    <textarea name="message" id="message" cols="30" rows="8" class="top06__inp" placeholder="Please write your message here &#42;"></textarea>
+                <li class="top06__mar">
+                    <textarea name="message" id="message" cols="30" rows="8" class="top06__inp" placeholder="Please write your message here &#42;" required></textarea>
+                </li>
+
+                <li class="top06__mar">
+                    <p class="err"></p>
                 </li>
                 <li class="top06__btn">
-                    <button type="submit" name="submit" class="btn btn--key">Send email</button>
+                    <button id="submit" type="submit" name="submit" class="btn btn--key">Send email</button>
                 </li>
-                <li><p></p></li>
 
                 <li class="top06__contact">
                     <div class="top06__col1 top06__col1--1">

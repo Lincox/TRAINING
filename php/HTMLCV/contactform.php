@@ -5,7 +5,7 @@ if (isset($_POST['submit'])){
     $mailFrom = $_POST['mail'];
     $message = $_POST['message'];
 
-    $mailTo = "l.h.bac@a-livesystems.com";//gmail will be block to receive maill from function mail()
+    $mailTo = "luuhoangbac@outlook.com";//gmail will be block to receive maill from function mail()
     $headers = "From: $mailFrom";
     $txt = "You have received an e-mail from".$name.".\n\n".$message;
 

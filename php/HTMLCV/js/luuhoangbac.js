@@ -61,13 +61,4 @@ function ascrollto(id) {
   $('html, body').animate({
     scrollTop: etop
   }, 1000);
-}
-
-$(document).ready(function(){
-  $("form").submit(function(event){
-    event.preventDefault();
-    var name = $("#name").val();
-    var mail = $("#mail").val();
-    var message = $("#message").val();
-  })
-})
+};
