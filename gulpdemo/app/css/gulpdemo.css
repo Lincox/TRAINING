@@ -57,4 +57,5 @@
 .parallax {
   background: url("../images/a.png") center no-repeat;
   background-attachment: fixed;
+  min-height: 500px;
   background-size: cover; }

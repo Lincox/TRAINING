@@ -38,14 +38,16 @@
     transition: 0.5s ease;
     cursor: pointer; }
 
-.top01::before {
+.top01::before,
+.top05::before,
+.top06::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 0; }
 
 .top02 {
@@ -292,12 +294,74 @@
   text-align: center;
   margin: 0;
   font-size: 0;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .top05 .title {
+    font-size: 30px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; }
+  .top05 .title::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: #f7b733;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50%); }
+  .top05 .title::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(1, 1, 1, 0.05);
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .top05 .btn {
+    display: inline-block;
+    margin-top: 30px; }
+  .top05__col1, .top05__col2 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; }
+  .top05__col1 {
+    width: 48.5%;
+    margin-right: 1.5%; }
+  .top05__col2 {
+    width: 50%; }
+  .top05__name, .top05__date, .top05__des {
+    position: relative;
+    z-index: 1; }
+  .top05__name {
+    color: white;
+    font-family: 'Josefin Sans', inherit;
+    font-size: 20px;
+    margin: 0 0 5px 0; }
+  .top05__name:hover {
+    color: #f7b733;
+    transition: 0.5s ease;
+    cursor: pointer; }
+  .top05__date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .top05__des {
+    color: #999;
+    font-size: 16px;
+    margin: 0; }
+    .top05__des--1 {
+      margin-bottom: 15px !important; }
+  .top05__des span {
+    font-weight: bold; }
 
 .top06 {
-  background: url("../images/pic_contact.jpg") no-repeat fixed;
+  background: url("../images/pic_contact.jpg") no-repeat center fixed;
   width: 100%;
+  background-size: cover;
   color: white;
   text-align: center;
   margin: 0;
@@ -330,16 +394,36 @@
     margin-left: 8px; }
   .top06__contact {
     margin-top: 50px; }
-
-.top06::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 0; }
+  .top06__col1, .top06__col2, .top06__col3 {
+    display: inline-block;
+    vertical-align: top; }
+    .top06__col1--1, .top06__col2--1, .top06__col3--1 {
+      font-size: 16px;
+      color: white;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      font-weight: 100;
+      margin-left: 8px; }
+    .top06__col1__icofr, .top06__col2__icofr, .top06__col3__icofr {
+      width: 54px;
+      height: auto;
+      display: inline-block;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      margin-right: 10px; }
+    .top06__col1--1 a:hover, .top06__col2--1 a:hover, .top06__col3--1 a:hover {
+      color: #f7b733;
+      transition: 0.5s ease;
+      cursor: pointer; }
+  .top06__col1 i, .top06__col2 i, .top06__col3 i {
+    font-size: 30px;
+    color: #f7b733; }
+  .top06__col1, .top06__col2 {
+    width: calc(35% - 8px); }
+  .top06__col2 {
+    width: calc(25% - 8px); }
+  .top06__col3 {
+    width: calc(40% - 8px); }
 
 .container {
   max-width: 1140px;
@@ -357,7 +441,8 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   .btn--key {
     color: white;
     border: 1px solid #f7b733;
@@ -380,32 +465,6 @@
     background: #f7b733;
     transition: 0.5s ease;
     cursor: pointer; }
-
-.threecol {
-  width: calc(33.3333333333333% - 8px);
-  display: inline-block;
-  vertical-align: top; }
-  .threecol--1 {
-    font-size: 16px;
-    color: white;
-    position: relative;
-    z-index: 1;
-    text-align: left;
-    font-weight: 100;
-    margin-left: 8px; }
-  .threecol--1 a:hover {
-    color: #f7b733;
-    transition: 0.5s ease;
-    cursor: pointer; }
-
-.threecol i {
-  font-size: 30px;
-  color: #f7b733; }
-
-.icon {
-  padding-right: 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  margin-right: 10px; }
 
 @media (max-width: 767px) {
   .top01 {
@@ -451,10 +510,12 @@
       font-size: 14px;
       padding: 0 10px; }
 
-  .fourcol:last-child, .fourcol:nth-child(2) {
+  .fourcol:last-child,
+  .fourcol:nth-child(2) {
     margin-right: 0; }
 
-  .fourcol:nth-child(3), .fourcol:nth-child(4) {
+  .fourcol:nth-child(3),
+  .fourcol:nth-child(4) {
     margin-top: 20px; }
 
   .fourcol:hover .circle {
@@ -481,8 +542,7 @@
         text-align: left;
         padding-left: 20px;
         border-left: 2px solid #999;
-        padding-top: 6px;
-        text-align: justify; }
+        padding-top: 6px; }
       .top04 .twocol--right::before {
         left: -5px; }
       .top04 .twocol--left:first-of-type::after {
@@ -505,7 +565,8 @@
         font-size: 14px;
         text-align: left; }
       .top04 .twocol__des {
-        font-size: 15px; }
+        font-size: 15px;
+        text-align: justify; }
 
   .top06 {
     background-attachment: scroll;
@@ -530,13 +591,36 @@
     .top06__mar:first-child, .top06__mar:nth-child(2) {
       margin-top: 0px;
       margin-bottom: 20px; }
-
-  .threecol {
-    width: 100%; }
-    .threecol--1 {
-      font-size: 13px; }
-
-  .threecol i {
-    font-size: 20px; } }
+    .top06__col1, .top06__col2, .top06__col3 {
+      width: 100%; }
+      .top06__col1__icofr, .top06__col2__icofr, .top06__col3__icofr {
+        width: 35px; }
+      .top06__col1--1, .top06__col2--1, .top06__col3--1 {
+        font-size: 13px;
+        margin-top: 20px; }
+    .top06__col1 i, .top06__col2 i, .top06__col3 i {
+      font-size: 20px; } }
+@media (max-width: 630px) {
+  .top05 .title {
+    font-size: 30px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; }
+  .top05 .btn {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 60px; }
+  .top05__col1, .top05__col2 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; }
+  .top05__col1 {
+    width: 100%;
+    margin-right: 0; }
+  .top05__col2 {
+    width: 100%; } }
 
 /*# sourceMappingURL=luuhoangbac.css.map */

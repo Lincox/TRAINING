@@ -116,24 +116,32 @@
 
     </section>
 
+    <section class="top05">
+        <ul class="container">
+            <li class="top05__col1">
+                <h2 class="title title--white">Education</h2>
+                <p class="top05__name">University of Technology and Education</p>
+                <p class="top05__date">September 2014 - Present</p>
+                <p class="top05__des">Information Technology</p>
+                <a href="" class="btn btn--key" onclick="ascrollto('road'); return false;">Detail</a>
+            </li>
+            <li class="top05__col2">
+                <h2 class="title title--white">Experience</h2>
 
+                <p class="top05__name">ALIVE Company</p>
+                <p class="top05__date">March 2018 - Present</p>
+                <p class="top05__des top05__des--1">
+                    <span>Position: </span>Front-end Developer</p>
+                <p class="top05__des top05__des--1">
+                    <span>Languages: </span>HTML/CSS, JS, CMS Wordpress</p>
+            </li>
+        </ul>
+    </section>
 
-    <section class="top04">
+    <section class="top04" id="road">
         <h2 class="title">My road</h2>
         <ul class="container container--1 clearfix">
             <li class="twocol twocol--left">
-                <h3>
-                    <a href="https://alive-web.vn/" class="twocol__name" target="_blank">Internship at ALIVE company</a>
-                </h3>
-                <p class="twocol__date">March 2018 - Present</p>
-                <p class="twocol__team">
-                    <span>Position: </span>Front-end Developer &#124;
-                    <span>Languages: </span>HTML/CSS, JS, CMS Wordpress</p>
-                <p class="twocol__des">I did the projet with my team in second year when taked Windows Programming class. From this project, I studied
-                    C&#10723, LINQ languages and knew how to create a winform app. This project was done for managing an
-                    mobile phone store.</p>
-            </li>
-            <li class="twocol twocol--right">
                 <h3 class="twocol__name">Webite sharing content</h3>
                 <p class="twocol__date">October 2017 - May 2018</p>
                 <p class="twocol__team">
@@ -143,7 +151,7 @@
                     website give people a solution for 2 types of people, one who wants to provide contents to get money
                     and one who pays money for those contents.</p>
             </li>
-            <li class="twocol twocol--left">
+            <li class="twocol twocol--right">
                 <h3 class="twocol__name">Website debating for students and lecturers</h3>
                 <p class="twocol__date">September 2016 - January 2017</p>
                 <p class="twocol__team">
@@ -154,7 +162,7 @@
                     online
                 </p>
             </li>
-            <li class="twocol twocol--right">
+            <li class="twocol twocol--left">
                 <h3 class="twocol__name">Managing Mobile Phone Store</h3>
                 <p class="twocol__date">January 2016 - May 2016</p>
                 <p class="twocol__team">
@@ -169,37 +177,44 @@
     </section>
 
     <section class="top06">
-        <h2 class="title title--white">Get in touch</h2>
+        <h2 class="title title--white">Hiring me</h2>
         <form method="post" action="contactform.php">
             <ul class="container container--1 clearfix">
                 <li class="twocol top06__mar">
-                    <input type="text" name="name" id="" placeholder="Name &#42;" class="top06__inp top06__inp--left">
+                    <input type="text" name="name" id="name" placeholder="Name (or Company)&#42;" class="top06__inp top06__inp--left">
                 </li>
                 <li class="twocol top06__mar">
-                    <input type="text" name="mail" id="" placeholder="Email &#42;" class="top06__inp top06__inp--right">
+                    <input type="text" name="mail" id="mail" placeholder="Email &#42;" class="top06__inp top06__inp--right">
                 </li>
                 <li class=" top06__mar">
-                    <input type="text" name="subject" id="" placeholder="Subject" class="top06__inp">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" class="top06__inp">
                 </li>
                 <li class=" top06__mar">
-                    <textarea name="message" id="comment" cols="30" rows="8" class="top06__inp" placeholder="Please write your message here &#42;"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="8" class="top06__inp" placeholder="Please write your message here &#42;"></textarea>
                 </li>
                 <li class="top06__btn">
                     <button type="submit" name="submit" class="btn btn--key">Send email</button>
                 </li>
+                <li><p></p></li>
 
                 <li class="top06__contact">
-                    <div class="threecol threecol--1">
-                        <i class="fa fa-envelope-o icon"></i>
+                    <div class="top06__col1 top06__col1--1">
+                        <div class="top06__col1__icofr">
+                            <i class="fa fa-envelope-o icon"></i>
+                        </div>
                         <!-- <a href="mailto:bacforwork@gmail.com">bacforwork@gmail.com</a> -->
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bacforwork@gmail.com">bacforwork@gmail.com</a>
                     </div>
-                    <div class="threecol threecol--1">
-                        <i class="fa fa-tablet icon"></i>
+                    <div class="top06__col2 top06__col2--1">
+                        <div class="top06__col2__icofr">
+                            <i class="fa fa-tablet"></i>
+                        </div>
                         <a href="tel:01262567539">01262567539</a>
                     </div>
-                    <div class="threecol threecol--1">
-                        <i class="fa fa-map-o icon"></i>
+                    <div class="top06__col3 top06__col3--1">
+                        <div class="top06__col3__icofr">
+                            <i class="fa fa-map-o"></i>
+                        </div>
                         <a href="https://goo.gl/maps/vQqPBsQigDE2" target="_blank">484 Le Van Viet, Dist. 9, Ho Chi Minh City</a>
                     </div>
                 </li>
@@ -213,18 +228,7 @@
     <script src="js/luuhoangbac.js"></script>
 
 
-    <!-- <section class="top05">
-        <ul>
-                <p class="fourcol__content">I meet the requirement of speaking, listening, writing and reading. That helps me working well</p>
-                <p class="fourcol__content">I meet the requirement of speaking, listening, writing and reading. That helps me working well</p>
-                <p class="fourcol__content">I meet the requirement of speaking, listening, writing and reading. That helps me working well</p>
-                <p class="fourcol__content">I meet the requirement of speaking, listening, writing and reading. That helps me working well</p>
-                
-            <li class="top05__col1">
 
-            </li>
-        </ul>
-    </section> -->
 </body>
 
 </html>

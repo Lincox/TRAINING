@@ -63,10 +63,10 @@ $keycolor: #f7b733;
     background: $b;
 }
 
-@mixin top {
+@mixin top($x) {
     font-size: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: $x;
+    padding-bottom: $x;
 }
 
 @mixin topsp {
@@ -128,12 +128,14 @@ $keycolor: #f7b733;
     }
 }
 
-.top01::before {
-    @include opa(0.8);
+.top01::before,
+.top05::before,
+.top06::before {
+    @include opa(0.6);
 }
 
 .top02 {
-    @include top;
+    @include top(100px);
 
     &__col1 {
         width: 40%;
@@ -246,7 +248,7 @@ $keycolor: #f7b733;
 }
 
 .top03 {
-    @include top;
+    @include top(100px);
 
     background-color: $grey3;
     text-align: center;
@@ -319,8 +321,7 @@ $keycolor: #f7b733;
 }
 
 .top04 {
-    @include top;
-
+    @include top(100px);
     text-align: center;
 
     .twocol {
@@ -356,7 +357,8 @@ $keycolor: #f7b733;
             padding-top: 30px;
         }
 
-        &--left::after, &--right::before {
+        &--left::after,
+        &--right::before {
             @include aft(8px, 8px);
 
             background-color: $keycolor;
@@ -422,18 +424,96 @@ $keycolor: #f7b733;
     text-align: center;
     margin: 0;
 
-    @include top;
+    @include top(50px);
+
+    .title {
+        font-size: 30px;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-bottom: 30px;
+        @include forbor;
+    }
+
+    .title::after {
+        @include borkey(50%);
+    }
+
+    .title::before {
+        @include borbot(1, 0.05);
+    }
+
+    .btn{
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    &__col1,
+    &__col2{
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    &__col1 {
+        width: 48.5%;
+        margin-right: 1.5%;
+    }
+
+    &__col2 {
+        width: 50%;
+    }
+
+    &__name,
+    &__date,
+    &__des {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__name {
+        color: white;
+        font-family: 'Josefin Sans', inherit;
+        font-size: 20px;
+        margin: 0 0 5px 0;
+    }
+
+    &__name:hover {
+        color: $keycolor;
+
+        @include trans;
+    }
+
+    &__date {
+        color: $grey2;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    &__des {
+        color: $grey2;
+        font-size: 16px;
+        margin: 0;
+        &--1{
+            margin-bottom:15px !important;
+        }
+    }
+
+    &__des span{
+        font-weight: bold;
+    }
 }
 
 .top06 {
-    background: url("../images/pic_contact.jpg") no-repeat fixed;
+    background: url("../images/pic_contact.jpg") no-repeat center fixed;
     width: 100%;
+    background-size: cover;
     color: white;
     text-align: center;
     margin: 0;
     position: relative;
 
-    @include top;
+    @include top(100px);
 
     .twocol {
         width: 50%;
@@ -457,7 +537,8 @@ $keycolor: #f7b733;
         margin-bottom: 30px;
     }
 
-    &__mar:first-child, &__mar:nth-child(2) {
+    &__mar:first-child,
+    &__mar:nth-child(2) {
         margin-top: 0px;
         margin-bottom: 30px;
     }
@@ -471,10 +552,57 @@ $keycolor: #f7b733;
     &__contact {
         margin-top: 50px;
     }
-}
 
-.top06::before {
-    @include opa(0.8);
+    &__col1,
+    &__col2,
+    &__col3 {
+        display: inline-block;
+        vertical-align: top;
+
+        &--1 {
+            font-size: 16px;
+            color: white;
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            font-weight: 100;
+            margin-left: 8px;
+        }
+
+        &__icofr {
+            width: 54px;
+            height: auto;
+            display: inline-block;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            margin-right: 10px;
+        }
+
+        &--1 a:hover {
+            color: $keycolor;
+
+            @include trans;
+        }
+    }
+
+    &__col1 i,
+    &__col2 i,
+    &__col3 i {
+        font-size: 30px;
+        color: $keycolor;
+    }
+
+    &__col1,
+    &__col2 {
+        width: calc(35% - 8px);
+    }
+
+    &__col2 {
+        width: calc(25% - 8px);
+    }
+
+    &__col3 {
+        width: calc(40% - 8px);
+    }
 }
 
 .container {
@@ -498,6 +626,7 @@ $keycolor: #f7b733;
     font-weight: bold;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 
     &--key {
         @include btn(white, $keycolor);
@@ -519,41 +648,9 @@ $keycolor: #f7b733;
 
     &--white:hover {
         @include btn(white, $keycolor);
-        @include trans;
-    }
-}
-
-.threecol {
-    width: calc(33.3333333333333% - 8px);
-    display: inline-block;
-    vertical-align: top;
-
-    &--1 {
-        font-size: 16px;
-        color: white;
-        position: relative;
-        z-index: 1;
-        text-align: left;
-        font-weight: 100;
-        margin-left: 8px;
-    }
-
-    &--1 a:hover {
-        color: $keycolor;
 
         @include trans;
     }
-}
-
-.threecol i {
-    font-size: 30px;
-    color: $keycolor;
-}
-
-.icon {
-    padding-right: 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
 }
 
 @media (max-width: 767px) {
@@ -576,7 +673,8 @@ $keycolor: #f7b733;
     .top02 {
         @include topsp;
 
-        &__col1, &__col2 {
+        &__col1,
+        &__col2 {
             width: 100%;
         }
 
@@ -621,11 +719,13 @@ $keycolor: #f7b733;
         }
     }
 
-    .fourcol:last-child, .fourcol:nth-child(2) {
+    .fourcol:last-child,
+    .fourcol:nth-child(2) {
         margin-right: 0;
     }
 
-    .fourcol:nth-child(3), .fourcol:nth-child(4) {
+    .fourcol:nth-child(3),
+    .fourcol:nth-child(4) {
         margin-top: 20px;
     }
 
@@ -653,13 +753,14 @@ $keycolor: #f7b733;
             display: inline-block;
             font-size: 20px;
 
-            &--right, &--left {
+            &--right,
+            &--left {
                 float: none;
                 text-align: left;
                 padding-left: 20px;
                 border-left: 2px solid $grey2;
                 padding-top: 6px;
-                text-align: justify;
+                
             }
 
             &--right::before {
@@ -703,6 +804,7 @@ $keycolor: #f7b733;
 
             &__des {
                 font-size: 15px;
+                text-align: justify;
             }
         }
     }
@@ -733,21 +835,66 @@ $keycolor: #f7b733;
             margin-bottom: 20px;
         }
 
-        &__mar:first-child, &__mar:nth-child(2) {
+        &__mar:first-child,
+        &__mar:nth-child(2) {
             margin-top: 0px;
             margin-bottom: 20px;
         }
-    }
 
-    .threecol {
-        width: 100%;
+        &__col1,
+        &__col2,
+        &__col3 {
+            width: 100%;
 
-        &--1 {
-            font-size: 13px;
+            &__icofr {
+                width: 35px;
+            }
+
+            &--1 {
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+
+        &__col1 i,
+        &__col2 i,
+        &__col3 i {
+            font-size: 20px;
         }
     }
+}
 
-    .threecol i {
-        font-size: 20px;
+@media (max-width:630px){
+    .top05 {
+        .title {
+            font-size: 30px;
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-bottom: 30px;
+            @include forbor;
+        }
+    
+        .btn{
+            display: inline-block;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+    
+        &__col1,
+        &__col2{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+    
+        &__col1 {
+            width: 100%;
+            margin-right: 0;
+        }
+    
+        &__col2 {
+            width: 100%;
+        }
+    
     }
 }
