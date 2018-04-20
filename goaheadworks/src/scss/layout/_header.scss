@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+
+/*-----------------------------------------------------------
+Header
+-------------------------------------------------------------*/
+#headerWrap {
+	width: 100%;
+	min-width: $widthcm;
+}
+#headerInner {
+	width: $widthcm;
+	margin: 10px auto;
+	padding: 0 30px;
+}
+#headerInner .logo {
+	float:left;
+	margin-top:20px;
+}
+#headerInner .headerR {
+	float:right;
+	width:370px;
+} 
+#headerInner h1{
+	color:#999999;
+	font-size:10px;
+	margin-top:20px;
+	margin-left:40px;
+	float:left;
+	width:320px;
+}
+.ul_header {
+	text-align:right;
+	font-size:10px;
+	margin-bottom:20px;
+}
+.ul_header li {
+	display:inline-block;
+	background:url(../../img/common/icon/ico_header.png) no-repeat left center;
+	margin-left:20px;
+	padding-left:15px;
+}
+.ul_header li:hover {
+	opacity:0.5;
+}
+.ul_header li:first-child {
+	margin-left:0px;
+}

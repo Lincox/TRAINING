@@ -1,0 +1,71 @@
+/*-----------------------------------------------------------
+global Navi
+-------------------------------------------------------------*/
+#gNaviWrap {
+	width: 100%;
+	min-width: $widthcm;
+	margin: 15px auto 5px;
+}
+#gNaviWrap #gNavi {
+	width: $widthcm;	
+}
+
+
+/*-----------------------------------------------------------
+global Navi
+-------------------------------------------------------------*/
+#gNaviWrap {
+	#gNavi {
+		width: $widthcm;
+		margin: 0 auto;
+	}
+	#gNavi > li {
+		float: left;
+		position: relative;
+	}
+	#gNavi > li, #gNavi > li > a {
+		height: 33px;
+		display: block;
+	}
+	
+	#gNavi01 > a {
+		background: url(../../img/common/gnavi/bg_gNavi.png) 0 0;
+		width: 160px;
+	}
+	#gNavi02 > a {
+		background: url(../../img/common/gnavi/bg_gNavi.png) -160px 0;
+		width: 200px;
+	}
+	#gNavi03 > a {
+		background: url(../../img/common/gnavi/bg_gNavi.png) -360px 0;
+		width: 235px;
+	}
+	#gNavi04 > a {
+		background: url(../../img/common/gnavi/bg_gNavi.png) -595px 0;
+		width: 235px;
+	}
+	#gNavi05 > a {
+		background: url(../../img/common/gnavi/bg_gNavi.png) -830px 0;
+		width: 171px;
+	}
+	#gNavi01:hover > a {
+		background: url(../../img/common/gnavi/bg_gNavi_on.png) 0 0;
+		width: 160px;
+	}
+	#gNavi02:hover > a {
+		background: url(../../img/common/gnavi/bg_gNavi_on.png) -160px 0;
+		width: 200px;
+	}
+	#gNavi03:hover > a {
+		background: url(../../img/common/gnavi/bg_gNavi_on.png) -360px 0;
+		width: 235px;
+	}
+	#gNavi04:hover > a {
+		background: url(../../img/common/gnavi/bg_gNavi_on.png) -595px 0;
+		width: 235px;
+	}
+	#gNavi05:hover > a {
+		background: url(../../img/common/gnavi/bg_gNavi_on.png) -830px 0;
+		width: 171px;
+	}
+}

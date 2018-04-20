@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+/*-----------------------------------------------------------
+Bread
+------------------------------------------------------------*/
+#bread {
+	margin: 20px 0;
+	color:#999;
+	font-size:10px;
+	float:right;
+}
+#bread a {
+	color:#999;
+	background:url(../../img/common/other/ico_v.png) no-repeat right center;
+	padding-right:15px;
+	margin-right:7px;
+}
+#bread a:hover {
+	text-decoration:underline;
+}
+#bread li {
+	float: left;
+}

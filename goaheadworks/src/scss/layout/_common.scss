@@ -1,0 +1,36 @@
+.widhun{
+  width: 100%;
+}
+
+.gocontainer{
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.colorline{
+  width: 14.2857%;
+  display: inline-block;
+  height: 12px;
+  &--1{
+    background: #f5007e;
+  }
+  &--2{
+    background: #00e676;
+  }
+  &--3{
+    background: #ffea01;
+  }
+  &--4{
+    background: #00afff;
+  }
+  &--5{
+    background: #d500f9;
+  }
+  &--6{
+    background: #c6ff00;
+  }
+  &--7{
+    background: #ff9001;
+  }
+}
